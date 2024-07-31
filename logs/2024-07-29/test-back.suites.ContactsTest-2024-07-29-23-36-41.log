@@ -1,0 +1,69 @@
+23:36:41.877 [INFO ] [UserTest] - The Test Suite back.suites.UserTest has started
+23:36:41.928 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+23:36:41.928 [INFO ] [UserTest] -  -------------- Step 1 Set the Request Specification for Login ------------------
+23:36:41.935 [INFO ] [LoginRequest] - The set the Request for Login User
+23:36:42.126 [INFO ] [RequestSpecBase] - JSON: {"email":"test2@fake.com","password":"myNewPassword"}
+23:36:42.389 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+23:36:42.391 [INFO ] [UserTest] -  -------------- Step 2 Set the Response Specification for Login ------------------
+23:36:42.393 [INFO ] [LoginResponse] - The set the Response
+23:36:42.394 [INFO ] [ResponseSpecBase] - The expected Status code: 200
+23:36:42.436 [INFO ] [ResponseSpecBase] - The expected wait time is : 9 seconds.
+23:36:42.464 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+23:36:42.466 [INFO ] [UserTest] -  -------------- Step 3 Send the Endpoint Get Users for Login ------------------
+23:36:42.827 [INFO ] [BaseTest] - ======FAILED=====
+23:36:42.837 [INFO ] [BaseTest] - Exception: java.lang.IllegalArgumentException: Specification to merge with cannot be null
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+	at io.restassured.internal.SpecificationMerger.merge(SpecificationMerger.groovy:94)
+	at io.restassured.internal.SpecificationMerger$merge.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at io.restassured.internal.RequestSpecificationImpl.spec(RequestSpecificationImpl.groovy:944)
+	at back.buider.APIsBuilder.getResponse(APIsBuilder.java:37)
+	at back.suites.ContactsTest.addContact(ContactsTest.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+23:36:42.846 [INFO ] [BaseTest] - ----------------------------------------------------------------------
+23:36:42.854 [INFO ] [BaseTest] -  -------------- The Test addContact has been completed
+23:36:42.858 [INFO ] [BaseTest] - ----------------------------------------------------------------------

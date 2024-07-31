@@ -1,0 +1,131 @@
+13:39:44.974 [INFO ] [UserTest] - The Test Suite back.suites.UserTest has started
+13:39:45.044 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+13:39:45.045 [INFO ] [UserTest] -  -------------- Step 1 Set the Request Specification for Login ------------------
+13:39:45.053 [INFO ] [LoginRequest] - The set the Request for Login User
+13:39:45.247 [INFO ] [RequestSpecBase] - JSON: {"email":"outputmail@gmail.com","password":"Test#123"}
+13:39:45.564 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+13:39:45.570 [INFO ] [UserTest] -  -------------- Step 2 Set the Response Specification for Login ------------------
+13:39:45.571 [INFO ] [LoginResponse] - The set the Response
+13:39:45.571 [INFO ] [ResponseSpecBase] - The expected Status code: 200
+13:39:45.596 [INFO ] [ResponseSpecBase] - The expected wait time is : 9 seconds.
+13:39:45.624 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+13:39:45.624 [INFO ] [UserTest] -  -------------- Step 3 Send the Endpoint Get Users for Login ------------------
+13:39:46.434 [INFO ] [RequestSpecBase] - Request method:	POST
+13:39:46.436 [INFO ] [RequestSpecBase] - Request URI:	https://thinking-tester-contact-list.herokuapp.com/users/login
+13:39:46.436 [INFO ] [RequestSpecBase] - Proxy:			<none>
+13:39:46.438 [INFO ] [RequestSpecBase] - Request params:	<none>
+13:39:46.439 [INFO ] [RequestSpecBase] - Query params:	<none>
+13:39:46.439 [INFO ] [RequestSpecBase] - Form params:	<none>
+13:39:46.439 [INFO ] [RequestSpecBase] - Path params:	<none>
+13:39:46.440 [INFO ] [RequestSpecBase] - Headers:		Accept=*/*
+13:39:46.440 [INFO ] [RequestSpecBase] - 				Content-Type=application/json
+13:39:46.440 [INFO ] [RequestSpecBase] - Cookies:		<none>
+13:39:46.441 [INFO ] [RequestSpecBase] - Multiparts:		<none>
+13:39:46.441 [INFO ] [RequestSpecBase] - Body:
+13:39:46.441 [INFO ] [RequestSpecBase] - {
+13:39:46.442 [INFO ] [RequestSpecBase] -     "email": "outputmail@gmail.com",
+13:39:46.442 [INFO ] [RequestSpecBase] -     "password": "Test#123"
+13:39:46.443 [INFO ] [RequestSpecBase] - }
+13:39:48.063 [INFO ] [RequestSpecBase] - HTTP/1.1 200 OK
+13:39:48.064 [INFO ] [RequestSpecBase] - Server: Cowboy
+13:39:48.064 [INFO ] [RequestSpecBase] - Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1722368388&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=w8O12sYMjjs%2F4R7nJorALwqXK%2FyNwbzz6%2FV%2BDdVM%2Fe8%3D"}]}
+13:39:48.065 [INFO ] [RequestSpecBase] - Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1722368388&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=w8O12sYMjjs%2F4R7nJorALwqXK%2FyNwbzz6%2FV%2BDdVM%2Fe8%3D
+13:39:48.065 [INFO ] [RequestSpecBase] - Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+13:39:48.066 [INFO ] [RequestSpecBase] - Connection: keep-alive
+13:39:48.066 [INFO ] [RequestSpecBase] - X-Powered-By: Express
+13:39:48.066 [INFO ] [RequestSpecBase] - Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmE4OTFkOGIxZWYwYzAwMTM4N2ZiYzkiLCJpYXQiOjE3MjIzNjgzODh9.zAiMvq3ZDFN_U7x7zqCe_lxiFVL3JBnJfOcfaOzAmO4; Max-Age=36000; Path=/; Expires=Wed, 31 Jul 2024 05:39:48 GMT
+13:39:48.067 [INFO ] [RequestSpecBase] - Content-Type: application/json; charset=utf-8
+13:39:48.067 [INFO ] [RequestSpecBase] - Content-Length: 286
+13:39:48.067 [INFO ] [RequestSpecBase] - Etag: W/"11e-u+xVPtKy0M/FvTZeSRbWeH6Gjc8"
+13:39:48.068 [INFO ] [RequestSpecBase] - Date: Tue, 30 Jul 2024 19:39:48 GMT
+13:39:48.068 [INFO ] [RequestSpecBase] - Via: 1.1 vegur
+13:39:48.068 [INFO ] [RequestSpecBase] - 
+13:39:48.069 [INFO ] [RequestSpecBase] - {
+13:39:48.069 [INFO ] [RequestSpecBase] -     "user": {
+13:39:48.070 [INFO ] [RequestSpecBase] -         "_id": "66a891d8b1ef0c001387fbc9",
+13:39:48.072 [INFO ] [RequestSpecBase] -         "firstName": "Chrollo",
+13:39:48.072 [INFO ] [RequestSpecBase] -         "lastName": "Lucifer",
+13:39:48.075 [INFO ] [RequestSpecBase] -         "email": "outputmail@gmail.com",
+13:39:48.076 [INFO ] [RequestSpecBase] -         "__v": 13
+13:39:48.076 [INFO ] [RequestSpecBase] -     },
+13:39:48.079 [INFO ] [RequestSpecBase] -     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmE4OTFkOGIxZWYwYzAwMTM4N2ZiYzkiLCJpYXQiOjE3MjIzNjgzODh9.zAiMvq3ZDFN_U7x7zqCe_lxiFVL3JBnJfOcfaOzAmO4"
+13:39:48.079 [INFO ] [RequestSpecBase] - }
+13:39:49.035 [INFO ] [UserTest] - User Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmE4OTFkOGIxZWYwYzAwMTM4N2ZiYzkiLCJpYXQiOjE3MjIzNjgzODh9.zAiMvq3ZDFN_U7x7zqCe_lxiFVL3JBnJfOcfaOzAmO4
+13:39:49.041 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+13:39:49.046 [INFO ] [UserTest] -  -------------- Step 4 Set the Request Specification for Add Contact ------------------
+13:39:49.048 [INFO ] [ContactsRequest] - The set the Request for Adding a Contact
+13:39:49.053 [INFO ] [RequestSpecBase] - JSON: {"firstName":"Satoru","lastName":"Gojo","birthdate":"1989-12-25","email":"satogojo@fake.com","phone":"8005555555","street1":"Shibuya st 1432","street2":"Penthouse","city":"Shibuya","stateProvince":"Tokyo","postalCode":"12345","country":"JP"}
+13:39:49.054 [INFO ] [RequestSpecBase] - HEADERS {Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmE4OTFkOGIxZWYwYzAwMTM4N2ZiYzkiLCJpYXQiOjE3MjIzNjgzODh9.zAiMvq3ZDFN_U7x7zqCe_lxiFVL3JBnJfOcfaOzAmO4, Content-Type=application/json}
+13:39:49.071 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+13:39:49.072 [INFO ] [UserTest] -  -------------- Step 5 Set the Response Specification for Add Contact  ------------------
+13:39:49.075 [INFO ] [ContactsResponse] - The set the Add Contacts Response
+13:39:49.075 [INFO ] [ResponseSpecBase] - The expected Status code: 201
+13:39:49.076 [INFO ] [ResponseSpecBase] - The expected wait time is : 9 seconds.
+13:39:49.486 [INFO ] [ResponseSpecBase] - The expected JSON SChema: 
+13:39:49.517 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+13:39:49.522 [INFO ] [UserTest] -  -------------- Step 6 Send the Endpoint for Add Contact  ------------------
+13:39:49.550 [INFO ] [RequestSpecBase] - Request method:	POST
+13:39:49.551 [INFO ] [RequestSpecBase] - Request URI:	https://thinking-tester-contact-list.herokuapp.com/contacts/
+13:39:49.552 [INFO ] [RequestSpecBase] - Proxy:			<none>
+13:39:49.553 [INFO ] [RequestSpecBase] - Request params:	<none>
+13:39:49.554 [INFO ] [RequestSpecBase] - Query params:	<none>
+13:39:49.554 [INFO ] [RequestSpecBase] - Form params:	<none>
+13:39:49.555 [INFO ] [RequestSpecBase] - Path params:	<none>
+13:39:49.555 [INFO ] [RequestSpecBase] - Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmE4OTFkOGIxZWYwYzAwMTM4N2ZiYzkiLCJpYXQiOjE3MjIzNjgzODh9.zAiMvq3ZDFN_U7x7zqCe_lxiFVL3JBnJfOcfaOzAmO4
+13:39:49.555 [INFO ] [RequestSpecBase] - 				Accept=*/*
+13:39:49.555 [INFO ] [RequestSpecBase] - 				Content-Type=application/json
+13:39:49.555 [INFO ] [RequestSpecBase] - Cookies:		<none>
+13:39:49.564 [INFO ] [RequestSpecBase] - Multiparts:		<none>
+13:39:49.565 [INFO ] [RequestSpecBase] - Body:
+13:39:49.567 [INFO ] [RequestSpecBase] - {
+13:39:49.567 [INFO ] [RequestSpecBase] -     "firstName": "Satoru",
+13:39:49.567 [INFO ] [RequestSpecBase] -     "lastName": "Gojo",
+13:39:49.568 [INFO ] [RequestSpecBase] -     "birthdate": "1989-12-25",
+13:39:49.568 [INFO ] [RequestSpecBase] -     "email": "satogojo@fake.com",
+13:39:49.568 [INFO ] [RequestSpecBase] -     "phone": "8005555555",
+13:39:49.569 [INFO ] [RequestSpecBase] -     "street1": "Shibuya st 1432",
+13:39:49.570 [INFO ] [RequestSpecBase] -     "street2": "Penthouse",
+13:39:49.570 [INFO ] [RequestSpecBase] -     "city": "Shibuya",
+13:39:49.570 [INFO ] [RequestSpecBase] -     "stateProvince": "Tokyo",
+13:39:49.571 [INFO ] [RequestSpecBase] -     "postalCode": "12345",
+13:39:49.572 [INFO ] [RequestSpecBase] -     "country": "JP"
+13:39:49.573 [INFO ] [RequestSpecBase] - }
+13:39:49.943 [INFO ] [RequestSpecBase] - HTTP/1.1 201 Created
+13:39:49.944 [INFO ] [RequestSpecBase] - Server: Cowboy
+13:39:49.944 [INFO ] [RequestSpecBase] - Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1722368390&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=CT6DbdG96d0sEBYLfxYItj%2FTKsAopgJgXtewtbpIJ6A%3D"}]}
+13:39:49.944 [INFO ] [RequestSpecBase] - Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1722368390&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=CT6DbdG96d0sEBYLfxYItj%2FTKsAopgJgXtewtbpIJ6A%3D
+13:39:49.945 [INFO ] [RequestSpecBase] - Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+13:39:49.945 [INFO ] [RequestSpecBase] - Connection: keep-alive
+13:39:49.945 [INFO ] [RequestSpecBase] - X-Powered-By: Express
+13:39:49.946 [INFO ] [RequestSpecBase] - Content-Type: application/json; charset=utf-8
+13:39:49.946 [INFO ] [RequestSpecBase] - Content-Length: 317
+13:39:49.946 [INFO ] [RequestSpecBase] - Etag: W/"13d-hXainrCzdkAa6CtYpO/Zdhba/dw"
+13:39:49.946 [INFO ] [RequestSpecBase] - Date: Tue, 30 Jul 2024 19:39:50 GMT
+13:39:49.947 [INFO ] [RequestSpecBase] - Via: 1.1 vegur
+13:39:49.947 [INFO ] [RequestSpecBase] - 
+13:39:49.947 [INFO ] [RequestSpecBase] - {
+13:39:49.948 [INFO ] [RequestSpecBase] -     "_id": "66a94186bffbd90013f73be2",
+13:39:49.948 [INFO ] [RequestSpecBase] -     "firstName": "Satoru",
+13:39:49.948 [INFO ] [RequestSpecBase] -     "lastName": "Gojo",
+13:39:49.948 [INFO ] [RequestSpecBase] -     "birthdate": "1989-12-25",
+13:39:49.949 [INFO ] [RequestSpecBase] -     "email": "satogojo@fake.com",
+13:39:49.949 [INFO ] [RequestSpecBase] -     "phone": "8005555555",
+13:39:49.949 [INFO ] [RequestSpecBase] -     "street1": "Shibuya st 1432",
+13:39:49.949 [INFO ] [RequestSpecBase] -     "street2": "Penthouse",
+13:39:49.951 [INFO ] [RequestSpecBase] -     "city": "Shibuya",
+13:39:49.952 [INFO ] [RequestSpecBase] -     "stateProvince": "Tokyo",
+13:39:49.953 [INFO ] [RequestSpecBase] -     "postalCode": "12345",
+13:39:49.954 [INFO ] [RequestSpecBase] -     "country": "JP",
+13:39:49.955 [INFO ] [RequestSpecBase] -     "owner": "66a891d8b1ef0c001387fbc9",
+13:39:49.955 [INFO ] [RequestSpecBase] -     "__v": 0
+13:39:49.955 [INFO ] [RequestSpecBase] - }
+13:39:50.097 [INFO ] [BaseTest] - ======PASSED=====
+13:39:50.099 [INFO ] [BaseTest] - ----------------------------------------------------------------------
+13:39:50.100 [INFO ] [BaseTest] -  -------------- The Test addContact has been completed
+13:39:50.100 [INFO ] [BaseTest] - ----------------------------------------------------------------------

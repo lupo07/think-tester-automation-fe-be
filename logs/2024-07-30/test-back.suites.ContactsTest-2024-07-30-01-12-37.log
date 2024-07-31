@@ -1,0 +1,89 @@
+01:12:37.629 [INFO ] [UserTest] - The Test Suite back.suites.UserTest has started
+01:12:37.701 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+01:12:37.702 [INFO ] [UserTest] -  -------------- Step 1 Set the Request Specification for Login ------------------
+01:12:37.713 [INFO ] [LoginRequest] - The set the Request for Login User
+01:12:38.020 [INFO ] [RequestSpecBase] - JSON: {"email":"test2@fake.com","password":"myNewPassword"}
+01:12:38.372 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+01:12:38.376 [INFO ] [UserTest] -  -------------- Step 2 Set the Response Specification for Login ------------------
+01:12:38.381 [INFO ] [LoginResponse] - The set the Response
+01:12:38.383 [INFO ] [ResponseSpecBase] - The expected Status code: 200
+01:12:38.448 [INFO ] [ResponseSpecBase] - The expected wait time is : 9 seconds.
+01:12:38.524 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+01:12:38.527 [INFO ] [UserTest] -  -------------- Step 3 Send the Endpoint Get Users for Login ------------------
+01:12:39.776 [INFO ] [RequestSpecBase] - Request method:	POST
+01:12:39.785 [INFO ] [RequestSpecBase] - Request URI:	https://thinking-tester-contact-list.herokuapp.com/users/login
+01:12:39.786 [INFO ] [RequestSpecBase] - Proxy:			<none>
+01:12:39.787 [INFO ] [RequestSpecBase] - Request params:	<none>
+01:12:39.788 [INFO ] [RequestSpecBase] - Query params:	<none>
+01:12:39.788 [INFO ] [RequestSpecBase] - Form params:	<none>
+01:12:39.789 [INFO ] [RequestSpecBase] - Path params:	<none>
+01:12:39.790 [INFO ] [RequestSpecBase] - Headers:		Accept=*/*
+01:12:39.790 [INFO ] [RequestSpecBase] - 				Content-Type=text/plain; charset=ISO-8859-1
+01:12:39.790 [INFO ] [RequestSpecBase] - Cookies:		<none>
+01:12:39.791 [INFO ] [RequestSpecBase] - Multiparts:		<none>
+01:12:39.791 [INFO ] [RequestSpecBase] - Body:
+01:12:39.791 [INFO ] [RequestSpecBase] - {"email":"test2@fake.com","password":"myNewPassword"}
+01:12:42.009 [INFO ] [RequestSpecBase] - HTTP/1.1 401 Unauthorized
+01:12:42.009 [INFO ] [RequestSpecBase] - Server: Cowboy
+01:12:42.012 [INFO ] [RequestSpecBase] - Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1722323562&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=3GwT2khUr6KVbtp5b8PaMLADRiPyjm8dyywyrinNTlU%3D"}]}
+01:12:42.013 [INFO ] [RequestSpecBase] - Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1722323562&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=3GwT2khUr6KVbtp5b8PaMLADRiPyjm8dyywyrinNTlU%3D
+01:12:42.013 [INFO ] [RequestSpecBase] - Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+01:12:42.014 [INFO ] [RequestSpecBase] - Connection: keep-alive
+01:12:42.017 [INFO ] [RequestSpecBase] - X-Powered-By: Express
+01:12:42.023 [INFO ] [RequestSpecBase] - Date: Tue, 30 Jul 2024 07:12:42 GMT
+01:12:42.025 [INFO ] [RequestSpecBase] - Content-Length: 0
+01:12:42.029 [INFO ] [RequestSpecBase] - Via: 1.1 vegur
+01:12:42.165 [INFO ] [BaseTest] - ======FAILED=====
+01:12:42.168 [INFO ] [BaseTest] - Exception: java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <401>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at back.buider.APIsBuilder.getResponse(APIsBuilder.java:43)
+	at back.suites.ContactsTest.addContact(ContactsTest.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+01:12:42.170 [INFO ] [BaseTest] - ----------------------------------------------------------------------
+01:12:42.172 [INFO ] [BaseTest] -  -------------- The Test addContact has been completed
+01:12:42.172 [INFO ] [BaseTest] - ----------------------------------------------------------------------

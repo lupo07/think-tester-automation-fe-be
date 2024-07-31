@@ -1,0 +1,68 @@
+02:21:05.904 [INFO ] [UserTest] - The Test Suite back.suites.UserTest has started
+02:21:06.052 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+02:21:06.053 [INFO ] [UserTest] -  -------------- Step 1 Set the Request Specification for Login ------------------
+02:21:06.069 [INFO ] [LoginRequest] - The set the Request for Login User
+02:21:06.476 [INFO ] [RequestSpecBase] - JSON: {"email":"outputmail@gmail.com","password":"Test#123"}
+02:21:06.992 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+02:21:06.993 [INFO ] [UserTest] -  -------------- Step 2 Set the Response Specification for Login ------------------
+02:21:06.995 [INFO ] [LoginResponse] - The set the Response
+02:21:06.996 [INFO ] [ResponseSpecBase] - The expected Status code: 200
+02:21:07.055 [INFO ] [ResponseSpecBase] - The expected wait time is : 9 seconds.
+02:21:07.106 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+02:21:07.106 [INFO ] [UserTest] -  -------------- Step 3 Send the Endpoint Get Users for Login ------------------
+02:21:08.642 [INFO ] [RequestSpecBase] - Request method:	POST
+02:21:08.644 [INFO ] [RequestSpecBase] - Request URI:	https://thinking-tester-contact-list.herokuapp.com/users/login
+02:21:08.645 [INFO ] [RequestSpecBase] - Proxy:			<none>
+02:21:08.646 [INFO ] [RequestSpecBase] - Request params:	<none>
+02:21:08.647 [INFO ] [RequestSpecBase] - Query params:	<none>
+02:21:08.648 [INFO ] [RequestSpecBase] - Form params:	<none>
+02:21:08.649 [INFO ] [RequestSpecBase] - Path params:	<none>
+02:21:08.650 [INFO ] [RequestSpecBase] - Headers:		Accept=*/*
+02:21:08.651 [INFO ] [RequestSpecBase] - 				Content-Type=application/json
+02:21:08.651 [INFO ] [RequestSpecBase] - Cookies:		<none>
+02:21:08.652 [INFO ] [RequestSpecBase] - Multiparts:		<none>
+02:21:08.652 [INFO ] [RequestSpecBase] - Body:
+02:21:08.654 [INFO ] [RequestSpecBase] - {
+02:21:08.655 [INFO ] [RequestSpecBase] -     "email": "outputmail@gmail.com",
+02:21:08.656 [INFO ] [RequestSpecBase] -     "password": "Test#123"
+02:21:08.657 [INFO ] [RequestSpecBase] - }
+02:21:11.207 [INFO ] [RequestSpecBase] - HTTP/1.1 200 OK
+02:21:11.208 [INFO ] [RequestSpecBase] - Server: Cowboy
+02:21:11.208 [INFO ] [RequestSpecBase] - Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1722327671&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=1ECINwsyyTvU%2Bj0BgtZ4rWrmmWTX5lpe2wOtfHwNbzA%3D"}]}
+02:21:11.208 [INFO ] [RequestSpecBase] - Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1722327671&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=1ECINwsyyTvU%2Bj0BgtZ4rWrmmWTX5lpe2wOtfHwNbzA%3D
+02:21:11.209 [INFO ] [RequestSpecBase] - Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+02:21:11.209 [INFO ] [RequestSpecBase] - Connection: keep-alive
+02:21:11.210 [INFO ] [RequestSpecBase] - X-Powered-By: Express
+02:21:11.210 [INFO ] [RequestSpecBase] - Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmE4OTFkOGIxZWYwYzAwMTM4N2ZiYzkiLCJpYXQiOjE3MjIzMjc2NzF9.FD9JY0UTTu4UrAoCOsZi3ZkCPbANH3Yizm6Bf4lAA4Q; Max-Age=36000; Path=/; Expires=Tue, 30 Jul 2024 18:21:11 GMT
+02:21:11.211 [INFO ] [RequestSpecBase] - Content-Type: application/json; charset=utf-8
+02:21:11.211 [INFO ] [RequestSpecBase] - Content-Length: 285
+02:21:11.211 [INFO ] [RequestSpecBase] - Etag: W/"11d-n/5u58759wMdOFq1DjMF5hHG4js"
+02:21:11.211 [INFO ] [RequestSpecBase] - Date: Tue, 30 Jul 2024 08:21:11 GMT
+02:21:11.211 [INFO ] [RequestSpecBase] - Via: 1.1 vegur
+02:21:11.212 [INFO ] [RequestSpecBase] - 
+02:21:11.212 [INFO ] [RequestSpecBase] - {
+02:21:11.213 [INFO ] [RequestSpecBase] -     "user": {
+02:21:11.213 [INFO ] [RequestSpecBase] -         "_id": "66a891d8b1ef0c001387fbc9",
+02:21:11.213 [INFO ] [RequestSpecBase] -         "firstName": "Chrollo",
+02:21:11.214 [INFO ] [RequestSpecBase] -         "lastName": "Lucifer",
+02:21:11.214 [INFO ] [RequestSpecBase] -         "email": "outputmail@gmail.com",
+02:21:11.214 [INFO ] [RequestSpecBase] -         "__v": 4
+02:21:11.215 [INFO ] [RequestSpecBase] -     },
+02:21:11.215 [INFO ] [RequestSpecBase] -     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmE4OTFkOGIxZWYwYzAwMTM4N2ZiYzkiLCJpYXQiOjE3MjIzMjc2NzF9.FD9JY0UTTu4UrAoCOsZi3ZkCPbANH3Yizm6Bf4lAA4Q"
+02:21:11.216 [INFO ] [RequestSpecBase] - }
+02:21:11.311 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+02:21:11.312 [INFO ] [UserTest] -  -------------- Step 4 Set the Request Specification for Add Contact ------------------
+02:21:11.316 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+02:21:11.320 [INFO ] [UserTest] -  -------------- Step 5 Set the Response Specification for Add Contact  ------------------
+02:21:11.323 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+02:21:11.324 [INFO ] [UserTest] -  -------------- Step 6 Send the Endpoint for Add Contact  ------------------
+02:21:11.344 [INFO ] [BaseTest] - ======PASSED=====
+02:21:11.346 [INFO ] [BaseTest] - ----------------------------------------------------------------------
+02:21:11.347 [INFO ] [BaseTest] -  -------------- The Test addContact has been completed
+02:21:11.348 [INFO ] [BaseTest] - ----------------------------------------------------------------------

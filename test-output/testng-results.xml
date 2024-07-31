@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-30T14:15:14 CST" name="Suite" finished-at="2024-07-30T14:16:25 CST" duration-ms="70910">
+    <groups>
+    </groups>
+    <test started-at="2024-07-30T14:15:14 CST" name="Test" finished-at="2024-07-30T14:16:25 CST" duration-ms="70910">
+      <class name="back.suites.ContactsTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:14 CST" name="beforeTest" finished-at="2024-07-30T14:15:14 CST" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:14 CST" name="beforeClass" finished-at="2024-07-30T14:15:14 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:15 CST" name="beforeMethod" finished-at="2024-07-30T14:15:16 CST" duration-ms="967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="addContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:16 CST" name="addContact" data-provider="addContactsTestData" finished-at="2024-07-30T14:15:21 CST" duration-ms="5203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ "email": "outputmail@gmail.com", "password": "Test#123"}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["token"]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"firstName":"Satoru","lastName":"Gojo","birthdate":"1989-12-25","email":"satogojo@fake.com","phone":"8005555555","street1":"Shibuya st 1432","street2":"Penthouse","city":"Shibuya","stateProvince":"Tokyo","postalCode":"12345","country":"JP"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[add-contact-schema.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addContact -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:21 CST" name="afterMethod" finished-at="2024-07-30T14:15:21 CST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addContact status=SUCCESS method=ContactsTest.addContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:back.suites.ContactsTest@5149f008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:21 CST" name="beforeMethod" finished-at="2024-07-30T14:15:21 CST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="deleteContact(java.lang.String,java.lang.String)[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:21 CST" name="deleteContact" data-provider="deleteContactsTestData" finished-at="2024-07-30T14:15:53 CST" duration-ms="31547" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ "email": "outputmail@gmail.com", "password": "Test#123"}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["token"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteContact -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:53 CST" name="afterMethod" finished-at="2024-07-30T14:15:53 CST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteContact status=SUCCESS method=ContactsTest.deleteContact(java.lang.String,java.lang.String)[pri:0, instance:back.suites.ContactsTest@5149f008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:53 CST" name="beforeMethod" finished-at="2024-07-30T14:15:53 CST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="updateContact(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:53 CST" name="updateContact" data-provider="updateContactsTestData" finished-at="2024-07-30T14:16:24 CST" duration-ms="30962" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ "email": "outputmail@gmail.com", "password": "Test#123"}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["token"]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{ "firstName": "Sattoru"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateContact -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:16:24 CST" name="afterMethod" finished-at="2024-07-30T14:16:24 CST" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateContact status=SUCCESS method=ContactsTest.updateContact(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:back.suites.ContactsTest@5149f008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:16:24 CST" name="afterClass" finished-at="2024-07-30T14:16:24 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:16:24 CST" name="afterTest" finished-at="2024-07-30T14:16:25 CST" duration-ms="474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- back.suites.ContactsTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

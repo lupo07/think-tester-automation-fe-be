@@ -1,0 +1,173 @@
+12:20:20.665 [INFO ] [UserTest] - The Test Suite back.suites.UserTest has started
+12:20:20.727 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+12:20:20.727 [INFO ] [UserTest] -  -------------- Step 1 Set the Request Specification for Login ------------------
+12:20:20.742 [INFO ] [LoginRequest] - The set the Request for Login User
+12:20:20.946 [INFO ] [RequestSpecBase] - JSON: {"email":"outputmail@gmail.com","password":"Test#123"}
+12:20:21.261 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+12:20:21.265 [INFO ] [UserTest] -  -------------- Step 2 Set the Response Specification for Login ------------------
+12:20:21.266 [INFO ] [LoginResponse] - The set the Response
+12:20:21.267 [INFO ] [ResponseSpecBase] - The expected Status code: 200
+12:20:21.295 [INFO ] [ResponseSpecBase] - The expected wait time is : 9 seconds.
+12:20:21.322 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+12:20:21.324 [INFO ] [UserTest] -  -------------- Step 3 Send the Endpoint Get Users for Login ------------------
+12:20:22.089 [INFO ] [RequestSpecBase] - Request method:	POST
+12:20:22.099 [INFO ] [RequestSpecBase] - Request URI:	https://thinking-tester-contact-list.herokuapp.com/users/login
+12:20:22.099 [INFO ] [RequestSpecBase] - Proxy:			<none>
+12:20:22.100 [INFO ] [RequestSpecBase] - Request params:	<none>
+12:20:22.101 [INFO ] [RequestSpecBase] - Query params:	<none>
+12:20:22.101 [INFO ] [RequestSpecBase] - Form params:	<none>
+12:20:22.101 [INFO ] [RequestSpecBase] - Path params:	<none>
+12:20:22.102 [INFO ] [RequestSpecBase] - Headers:		Accept=*/*
+12:20:22.102 [INFO ] [RequestSpecBase] - 				Content-Type=application/json
+12:20:22.102 [INFO ] [RequestSpecBase] - Cookies:		<none>
+12:20:22.102 [INFO ] [RequestSpecBase] - Multiparts:		<none>
+12:20:22.103 [INFO ] [RequestSpecBase] - Body:
+12:20:22.103 [INFO ] [RequestSpecBase] - {
+12:20:22.103 [INFO ] [RequestSpecBase] -     "email": "outputmail@gmail.com",
+12:20:22.104 [INFO ] [RequestSpecBase] -     "password": "Test#123"
+12:20:22.105 [INFO ] [RequestSpecBase] - }
+12:20:23.858 [INFO ] [RequestSpecBase] - HTTP/1.1 200 OK
+12:20:23.858 [INFO ] [RequestSpecBase] - Server: Cowboy
+12:20:23.859 [INFO ] [RequestSpecBase] - Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1722363624&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=TreG%2Fee6HIkV08X1ZKbilFBW6q%2FOwIOBe2GRpovcoeE%3D"}]}
+12:20:23.859 [INFO ] [RequestSpecBase] - Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1722363624&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=TreG%2Fee6HIkV08X1ZKbilFBW6q%2FOwIOBe2GRpovcoeE%3D
+12:20:23.860 [INFO ] [RequestSpecBase] - Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+12:20:23.860 [INFO ] [RequestSpecBase] - Connection: keep-alive
+12:20:23.860 [INFO ] [RequestSpecBase] - X-Powered-By: Express
+12:20:23.861 [INFO ] [RequestSpecBase] - Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmE4OTFkOGIxZWYwYzAwMTM4N2ZiYzkiLCJpYXQiOjE3MjIzNjM2MjR9.UF85xVPD_Jcxbw2L9JEGW-pUZQhn7cgiWOmr9aeHP-Q; Max-Age=36000; Path=/; Expires=Wed, 31 Jul 2024 04:20:24 GMT
+12:20:23.861 [INFO ] [RequestSpecBase] - Content-Type: application/json; charset=utf-8
+12:20:23.861 [INFO ] [RequestSpecBase] - Content-Length: 285
+12:20:23.862 [INFO ] [RequestSpecBase] - Etag: W/"11d-O+LmhM+lbyrn7HMFe+NTWfMRg94"
+12:20:23.862 [INFO ] [RequestSpecBase] - Date: Tue, 30 Jul 2024 18:20:24 GMT
+12:20:23.862 [INFO ] [RequestSpecBase] - Via: 1.1 vegur
+12:20:23.863 [INFO ] [RequestSpecBase] - 
+12:20:23.863 [INFO ] [RequestSpecBase] - {
+12:20:23.864 [INFO ] [RequestSpecBase] -     "user": {
+12:20:23.864 [INFO ] [RequestSpecBase] -         "_id": "66a891d8b1ef0c001387fbc9",
+12:20:23.864 [INFO ] [RequestSpecBase] -         "firstName": "Chrollo",
+12:20:23.865 [INFO ] [RequestSpecBase] -         "lastName": "Lucifer",
+12:20:23.865 [INFO ] [RequestSpecBase] -         "email": "outputmail@gmail.com",
+12:20:23.865 [INFO ] [RequestSpecBase] -         "__v": 7
+12:20:23.866 [INFO ] [RequestSpecBase] -     },
+12:20:23.866 [INFO ] [RequestSpecBase] -     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmE4OTFkOGIxZWYwYzAwMTM4N2ZiYzkiLCJpYXQiOjE3MjIzNjM2MjR9.UF85xVPD_Jcxbw2L9JEGW-pUZQhn7cgiWOmr9aeHP-Q"
+12:20:23.866 [INFO ] [RequestSpecBase] - }
+12:20:24.862 [INFO ] [UserTest] - User Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmE4OTFkOGIxZWYwYzAwMTM4N2ZiYzkiLCJpYXQiOjE3MjIzNjM2MjR9.UF85xVPD_Jcxbw2L9JEGW-pUZQhn7cgiWOmr9aeHP-Q
+12:20:24.869 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+12:20:24.871 [INFO ] [UserTest] -  -------------- Step 4 Set the Request Specification for Add Contact ------------------
+12:20:24.871 [INFO ] [ContactsRequest] - The set the Request for Adding a Contact
+12:20:24.873 [INFO ] [RequestSpecBase] - JSON: {"firstName":"Satoru","lastName":"Gojo","birthdate":"1989-25-12","email":"satogojo@fake.com","phone":"8005555555","street1":"Shibuya st 1432","street2":"Penthouse","city":"Shibuya","stateProvince":"Tokyo","postalCode":"12345","country":"JP"}
+12:20:24.877 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+12:20:24.879 [INFO ] [UserTest] -  -------------- Step 5 Set the Response Specification for Add Contact  ------------------
+12:20:24.879 [INFO ] [ContactsResponse] - The set the Add Contacts Response
+12:20:24.880 [INFO ] [ResponseSpecBase] - The expected Status code: 201
+12:20:24.881 [INFO ] [ResponseSpecBase] - The expected wait time is : 9 seconds.
+12:20:25.229 [INFO ] [ResponseSpecBase] - The expected JSON SChema: 
+12:20:25.272 [INFO ] [UserTest] - 
+ ----------------------------------------------------------------------
+12:20:25.276 [INFO ] [UserTest] -  -------------- Step 6 Send the Endpoint for Add Contact  ------------------
+12:20:25.313 [INFO ] [RequestSpecBase] - Request method:	POST
+12:20:25.315 [INFO ] [RequestSpecBase] - Request URI:	https://thinking-tester-contact-list.herokuapp.com/contacts/
+12:20:25.316 [INFO ] [RequestSpecBase] - Proxy:			<none>
+12:20:25.317 [INFO ] [RequestSpecBase] - Request params:	<none>
+12:20:25.319 [INFO ] [RequestSpecBase] - Query params:	<none>
+12:20:25.320 [INFO ] [RequestSpecBase] - Form params:	<none>
+12:20:25.321 [INFO ] [RequestSpecBase] - Path params:	<none>
+12:20:25.321 [INFO ] [RequestSpecBase] - Headers:		Accept=*/*
+12:20:25.322 [INFO ] [RequestSpecBase] - 				Content-Type=application/json
+12:20:25.323 [INFO ] [RequestSpecBase] - Cookies:		<none>
+12:20:25.325 [INFO ] [RequestSpecBase] - Multiparts:		<none>
+12:20:25.326 [INFO ] [RequestSpecBase] - Body:
+12:20:25.327 [INFO ] [RequestSpecBase] - {
+12:20:25.329 [INFO ] [RequestSpecBase] -     "firstName": "Satoru",
+12:20:25.330 [INFO ] [RequestSpecBase] -     "lastName": "Gojo",
+12:20:25.330 [INFO ] [RequestSpecBase] -     "birthdate": "1989-25-12",
+12:20:25.331 [INFO ] [RequestSpecBase] -     "email": "satogojo@fake.com",
+12:20:25.332 [INFO ] [RequestSpecBase] -     "phone": "8005555555",
+12:20:25.333 [INFO ] [RequestSpecBase] -     "street1": "Shibuya st 1432",
+12:20:25.333 [INFO ] [RequestSpecBase] -     "street2": "Penthouse",
+12:20:25.333 [INFO ] [RequestSpecBase] -     "city": "Shibuya",
+12:20:25.334 [INFO ] [RequestSpecBase] -     "stateProvince": "Tokyo",
+12:20:25.334 [INFO ] [RequestSpecBase] -     "postalCode": "12345",
+12:20:25.334 [INFO ] [RequestSpecBase] -     "country": "JP"
+12:20:25.335 [INFO ] [RequestSpecBase] - }
+12:20:25.752 [INFO ] [RequestSpecBase] - HTTP/1.1 401 Unauthorized
+12:20:25.753 [INFO ] [RequestSpecBase] - Server: Cowboy
+12:20:25.753 [INFO ] [RequestSpecBase] - Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1722363626&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=6xaasrAhN4QMPXeEkdT9CumLV%2FSFcAyb9t9LcuO8TnI%3D"}]}
+12:20:25.753 [INFO ] [RequestSpecBase] - Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1722363626&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=6xaasrAhN4QMPXeEkdT9CumLV%2FSFcAyb9t9LcuO8TnI%3D
+12:20:25.754 [INFO ] [RequestSpecBase] - Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+12:20:25.754 [INFO ] [RequestSpecBase] - Connection: keep-alive
+12:20:25.754 [INFO ] [RequestSpecBase] - X-Powered-By: Express
+12:20:25.754 [INFO ] [RequestSpecBase] - Content-Type: application/json; charset=utf-8
+12:20:25.755 [INFO ] [RequestSpecBase] - Content-Length: 32
+12:20:25.755 [INFO ] [RequestSpecBase] - Etag: W/"20-l84Ae8oPqxLFOfh6GyOldXOyOfM"
+12:20:25.755 [INFO ] [RequestSpecBase] - Date: Tue, 30 Jul 2024 18:20:26 GMT
+12:20:25.755 [INFO ] [RequestSpecBase] - Via: 1.1 vegur
+12:20:25.756 [INFO ] [RequestSpecBase] - 
+12:20:25.756 [INFO ] [RequestSpecBase] - {
+12:20:25.756 [INFO ] [RequestSpecBase] -     "error": "Please authenticate."
+12:20:25.757 [INFO ] [RequestSpecBase] - }
+12:20:25.927 [INFO ] [BaseTest] - ======FAILED=====
+12:20:25.931 [INFO ] [BaseTest] - Exception: java.lang.AssertionError: 2 expectations failed.
+Expected status code <201> but was <401>.
+
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties (["__v","_id","birthdate","city","country","email","firstName","lastName","owner","phone","postalCode","stateProvince","street1","street2"])
+    level: "error"
+    schema: {"loadingURI":"file:/C:/think-tester-automation-fe-be/target/test-classes/add-contact-schema.json#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["__v","_id","birthdate","city","country","email","firstName","lastName","owner","phone","postalCode","stateProvince","street1","street2"]
+    missing: ["__v","_id","birthdate","city","country","email","firstName","lastName","owner","phone","postalCode","stateProvince","street1","street2"]
+
+  Actual: {"error":"Please authenticate."}
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at back.buider.APIsBuilder.getResponse(APIsBuilder.java:43)
+	at back.suites.ContactsTest.addContact(ContactsTest.java:59)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+12:20:25.935 [INFO ] [BaseTest] - ----------------------------------------------------------------------
+12:20:25.935 [INFO ] [BaseTest] -  -------------- The Test addContact has been completed
+12:20:25.936 [INFO ] [BaseTest] - ----------------------------------------------------------------------
