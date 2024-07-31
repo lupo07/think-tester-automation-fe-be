@@ -1,0 +1,28 @@
+20:00:34.282 [INFO ] [BaseTestFront] - The Test Suite front.suites.ContactsFrontTest has started
+20:00:38.926 [INFO ] [BaseTestFront] - Local Driver
+20:00:38.927 [INFO ] [BaseTestFront] -  Base Url: https://thinking-tester-contact-list.herokuapp.com/ Browser: chrome
+20:00:38.928 [INFO ] [BaseTestFront] - Driver: ChromeDriver: chrome on windows (aa4e030bf1e5241628fc6021a0b22c2e)
+20:00:46.010 [INFO ] [ContactsFrontTest] - The Test Suite front.suites.ContactsFrontTest has started
+20:00:46.021 [INFO ] [ContactsFrontTest] - 
+ ----------------------------------------------------------------------
+20:00:46.053 [INFO ] [ContactsFrontTest] -  -------------- Step 1 Search for the Product ------------------
+20:00:46.131 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (aa4e030bf1e5241628fc6021a0b22c2e)] -> xpath: //h1] to be visible
+20:00:46.264 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (aa4e030bf1e5241628fc6021a0b22c2e)] -> xpath: //h1] is present
+20:00:46.397 [INFO ] [SeleniumActions] - The text of the WebElement: [[ChromeDriver: chrome on windows (aa4e030bf1e5241628fc6021a0b22c2e)] -> xpath: //h1] is : Contact List App
+20:00:46.398 [INFO ] [SupportValidations] - The Actual Header is: Contact List App The Expected Header is: Contact List App
+20:00:46.429 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (aa4e030bf1e5241628fc6021a0b22c2e)] -> xpath: //input[@id='email']] to be visible
+20:00:46.515 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (aa4e030bf1e5241628fc6021a0b22c2e)] -> xpath: //input[@id='email']] is present
+20:00:46.864 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (aa4e030bf1e5241628fc6021a0b22c2e)] -> xpath: //input[@id='email']]
+20:00:46.865 [INFO ] [LoginPage] - Fill the input with the email: outputmail@gmail.com
+20:00:46.887 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (aa4e030bf1e5241628fc6021a0b22c2e)] -> xpath: //input[@id='password']] to be visible
+20:00:46.959 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (aa4e030bf1e5241628fc6021a0b22c2e)] -> xpath: //input[@id='password']] is present
+20:00:47.223 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (aa4e030bf1e5241628fc6021a0b22c2e)] -> xpath: //input[@id='password']]
+20:00:47.224 [INFO ] [LoginPage] - Fill the input with the email: Test#123
+20:00:47.254 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (aa4e030bf1e5241628fc6021a0b22c2e)] -> xpath: //button[@id='submit']] to be clickable
+20:00:47.360 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (aa4e030bf1e5241628fc6021a0b22c2e)] -> xpath: //button[@id='submit']] is clickable
+20:00:47.519 [INFO ] [SeleniumActions] - The Click on a WebElement: [[ChromeDriver: chrome on windows (aa4e030bf1e5241628fc6021a0b22c2e)] -> xpath: //button[@id='submit']]
+20:00:47.520 [INFO ] [LoginPage] - Click on Submit Button
+20:00:47.575 [INFO ] [BaseTestFront] - ======PASSED=====
+20:00:47.577 [INFO ] [BaseTestFront] - ----------------------------------------------------------------------
+20:00:47.578 [INFO ] [BaseTestFront] -  -------------- The Test addContact has been completed
+20:00:47.579 [INFO ] [BaseTestFront] - ----------------------------------------------------------------------

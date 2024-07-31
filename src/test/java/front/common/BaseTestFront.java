@@ -20,6 +20,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -29,23 +30,56 @@ import com.aventstack.extentreports.MediaEntityModelProvider;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
+import back.common.ExcelUtility;
+import front.pages.AddContactsPage;
+import front.pages.ContactsDetailsPage;
+import front.pages.ContactsPage;
+import front.pages.EditContactsPages;
+import front.pages.LoginPage;
+
 //import app.pages.CartPage;
 //import app.pages.ProductPage;
 //import app.pages.ProductStoreLPage;
 
-public class BaseTest {
+public class BaseTestFront {
 	public WebDriver driver;
 	public ExtentHtmlReporter htmlReporter;
 	public ExtentReports report;
 	public ExtentTest test;
 	public DriverSetUp ds;
-//	public ProductStoreLPage pdlp;
-//	public ProductPage pp;
-	public UsefulMethods um;
-//	public CartPage cp;
+	public LoginPage lp;
+	public ContactsPage conpage;
+	public AddContactsPage addconpage;
+	public UsefulMethodsFront um;
+	public ContactsDetailsPage condetpage;
+	public EditContactsPages editconpage;
 	public DockerSet dock;
 	public ConfigReader config = new ConfigReader();
-	private static final Logger log = LogManager.getLogger(BaseTest.class.getName());
+	private static final Logger log = LogManager.getLogger(BaseTestFront.class.getName());
+
+	@DataProvider(name = "addContactsFrontTD")
+	public Object[][] updateContactDataProvider() throws Exception {
+		ExcelUtility.setExcelFile(ConstantsFront.FILE_PATH_CONTACTS_TEST + ConstantsFront.FILE_NAME_CONTACTS_TEST,
+				"AddContactsFront");
+		Object[][] testData = ExcelUtility.getTestData("add_contacts_fr");
+		return testData;
+	}
+	
+	@DataProvider(name = "deleteContactsFrontTD")
+	public Object[][] deletContactProvider() throws Exception {
+		ExcelUtility.setExcelFile(ConstantsFront.FILE_PATH_CONTACTS_TEST + ConstantsFront.FILE_NAME_CONTACTS_TEST,
+				"DeleteContactsFront");
+		Object[][] testData = ExcelUtility.getTestData("delete_contacts_fr");
+		return testData;
+	}
+	
+	@DataProvider(name = "editContactsFrontTD")
+	public Object[][] editContactProvider() throws Exception {
+		ExcelUtility.setExcelFile(ConstantsFront.FILE_PATH_CONTACTS_TEST + ConstantsFront.FILE_NAME_CONTACTS_TEST,
+				"EditContactsFront");
+		Object[][] testData = ExcelUtility.getTestData("edit_contacts_fr");
+		return testData;
+	}
 
 	@BeforeClass
 	@Parameters({ "runType", "startDocker", "environment" })
@@ -119,10 +153,12 @@ public class BaseTest {
 		log.info(" Base Url: " + config.getBaseURL() + " Browser: " + browser);
 		log.info("Driver: " + driver);
 
-//		pdlp = new ProductStoreLPage(driver);
-//		pp = new ProductPage(driver);
-//		cp = new CartPage(driver);
-		um = new UsefulMethods(driver);
+		lp = new LoginPage(driver);
+		conpage = new ContactsPage(driver);
+		addconpage = new AddContactsPage(driver);
+		condetpage = new ContactsDetailsPage(driver);
+		editconpage = new EditContactsPages(driver);
+		um = new UsefulMethodsFront(driver);
 
 		driver.get(config.getBaseURL());
 		driver.manage().window().maximize();

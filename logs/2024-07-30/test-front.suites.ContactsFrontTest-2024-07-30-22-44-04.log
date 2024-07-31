@@ -1,0 +1,90 @@
+22:44:04.108 [INFO ] [BaseTestFront] - The Test Suite front.suites.ContactsFrontTest has started
+22:44:19.324 [INFO ] [BaseTestFront] - Local Driver
+22:44:19.325 [INFO ] [BaseTestFront] -  Base Url: https://thinking-tester-contact-list.herokuapp.com/ Browser: chrome
+22:44:19.327 [INFO ] [BaseTestFront] - Driver: ChromeDriver: chrome on windows (08603d722cab9900eecf08615e314350)
+22:44:20.690 [INFO ] [ContactsFrontTest] - The Test Suite front.suites.ContactsFrontTest has started
+22:44:20.702 [INFO ] [ContactsFrontTest] - 
+ ----------------------------------------------------------------------
+22:44:20.707 [INFO ] [ContactsFrontTest] -  -------------- Step 1 Login Page ------------------
+22:44:20.780 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (08603d722cab9900eecf08615e314350)] -> xpath: //h1] to be visible
+22:44:20.885 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (08603d722cab9900eecf08615e314350)] -> xpath: //h1] is present
+22:44:20.965 [INFO ] [SeleniumActions] - The text of the WebElement: [[ChromeDriver: chrome on windows (08603d722cab9900eecf08615e314350)] -> xpath: //h1] is : Contact List App
+22:44:20.966 [INFO ] [SupportValidations] - The Actual Header is: Contact List App The Expected Header is: Contact List App
+22:44:21.003 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (08603d722cab9900eecf08615e314350)] -> xpath: //input[@id='email']] to be visible
+22:44:21.106 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (08603d722cab9900eecf08615e314350)] -> xpath: //input[@id='email']] is present
+22:44:24.352 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (08603d722cab9900eecf08615e314350)] -> xpath: //input[@id='email']]
+22:44:24.353 [INFO ] [LoginPage] - Fill the input with the email: outputmail@gmail.com
+22:44:24.374 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (08603d722cab9900eecf08615e314350)] -> xpath: //input[@id='password']] to be visible
+22:44:24.424 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (08603d722cab9900eecf08615e314350)] -> xpath: //input[@id='password']] is present
+22:44:24.637 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (08603d722cab9900eecf08615e314350)] -> xpath: //input[@id='password']]
+22:44:24.638 [INFO ] [LoginPage] - Fill the input with the email: Test#123
+22:44:24.669 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (08603d722cab9900eecf08615e314350)] -> xpath: //button[@id='submit']] to be clickable
+22:44:24.746 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (08603d722cab9900eecf08615e314350)] -> xpath: //button[@id='submit']] is clickable
+22:44:25.153 [INFO ] [SeleniumActions] - The Click on a WebElement: [[ChromeDriver: chrome on windows (08603d722cab9900eecf08615e314350)] -> xpath: //button[@id='submit']]
+22:44:25.154 [INFO ] [LoginPage] - Click on Submit Button
+22:44:25.155 [INFO ] [ContactsFrontTest] - 
+ ----------------------------------------------------------------------
+22:44:25.156 [INFO ] [ContactsFrontTest] -  -------------- Step 2 Click on Add New Contact Button ------------------
+22:44:25.172 [INFO ] [ExplicitWaits] - Waiting for max:: 10 seconds for element [[ChromeDriver: chrome on windows (08603d722cab9900eecf08615e314350)] -> xpath: //h1] to be visible
+22:44:25.258 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (08603d722cab9900eecf08615e314350)] -> xpath: //h1] is present
+22:44:27.652 [INFO ] [BaseTestFront] - ======FAILED=====
+22:44:28.414 [INFO ] [BaseTestFront] - Exception: org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=127.0.6533.73)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [08603d722cab9900eecf08615e314350, getElementText {id=f.071F3B8B3C4BB492B0514DB7A6218F55.d.699B8A05FB07F0CCFCA95C4AB1A4F42E.e.7}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62060/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (08603d722cab9900eecf08615e314350)] -> xpath: //h1]
+Session ID: 08603d722cab9900eecf08615e314350
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy36.getText(Unknown Source)
+	at front.common.SeleniumActions.getElementText(SeleniumActions.java:30)
+	at front.common.SupportValidations.verifyPageHeader(SupportValidations.java:47)
+	at front.pages.ContactsPage.verifyContactsPage(ContactsPage.java:49)
+	at front.suites.ContactsFrontTest.addContact(ContactsFrontTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+22:44:28.432 [INFO ] [BaseTestFront] - ----------------------------------------------------------------------
+22:44:28.434 [INFO ] [BaseTestFront] -  -------------- The Test addContact has been completed
+22:44:28.434 [INFO ] [BaseTestFront] - ----------------------------------------------------------------------

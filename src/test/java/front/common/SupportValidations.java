@@ -45,7 +45,7 @@ public class SupportValidations {
 		Assert.assertTrue(
 				exwait.waitForVisibilityOfElement(wElement, timeout));
 		String str = selact.getElementText(wElement);
-
+		
 		log.info("The Actual Header is: " + str + " The Expected Header is: " + expectedHeader);
 		Assert.assertEquals(str, expectedHeader);
 	}

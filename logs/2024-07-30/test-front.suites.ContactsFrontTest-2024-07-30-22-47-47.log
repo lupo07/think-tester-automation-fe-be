@@ -1,0 +1,38 @@
+22:47:47.002 [INFO ] [BaseTestFront] - The Test Suite front.suites.ContactsFrontTest has started
+22:47:50.912 [INFO ] [BaseTestFront] - Local Driver
+22:47:50.913 [INFO ] [BaseTestFront] -  Base Url: https://thinking-tester-contact-list.herokuapp.com/ Browser: chrome
+22:47:50.914 [INFO ] [BaseTestFront] - Driver: ChromeDriver: chrome on windows (fe14775e7464a0246c3f7a2c384fb862)
+22:47:54.271 [INFO ] [ContactsFrontTest] - The Test Suite front.suites.ContactsFrontTest has started
+22:47:54.286 [INFO ] [ContactsFrontTest] - 
+ ----------------------------------------------------------------------
+22:47:54.383 [INFO ] [ContactsFrontTest] -  -------------- Step 1 Login Page ------------------
+22:47:54.438 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (fe14775e7464a0246c3f7a2c384fb862)] -> xpath: //h1] to be visible
+22:47:54.528 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (fe14775e7464a0246c3f7a2c384fb862)] -> xpath: //h1] is present
+22:47:54.635 [INFO ] [SeleniumActions] - The text of the WebElement: [[ChromeDriver: chrome on windows (fe14775e7464a0246c3f7a2c384fb862)] -> xpath: //h1] is : Contact List App
+22:47:54.636 [INFO ] [SupportValidations] - The Actual Header is: Contact List App The Expected Header is: Contact List App
+22:47:54.660 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (fe14775e7464a0246c3f7a2c384fb862)] -> xpath: //input[@id='email']] to be visible
+22:47:54.715 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (fe14775e7464a0246c3f7a2c384fb862)] -> xpath: //input[@id='email']] is present
+22:47:55.015 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (fe14775e7464a0246c3f7a2c384fb862)] -> xpath: //input[@id='email']]
+22:47:55.016 [INFO ] [LoginPage] - Fill the input with the email: outputmail@gmail.com
+22:47:55.040 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (fe14775e7464a0246c3f7a2c384fb862)] -> xpath: //input[@id='password']] to be visible
+22:47:55.109 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (fe14775e7464a0246c3f7a2c384fb862)] -> xpath: //input[@id='password']] is present
+22:47:55.318 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (fe14775e7464a0246c3f7a2c384fb862)] -> xpath: //input[@id='password']]
+22:47:55.319 [INFO ] [LoginPage] - Fill the input with the email: Test#123
+22:47:55.344 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (fe14775e7464a0246c3f7a2c384fb862)] -> xpath: //button[@id='submit']] to be clickable
+22:47:55.434 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (fe14775e7464a0246c3f7a2c384fb862)] -> xpath: //button[@id='submit']] is clickable
+22:47:55.530 [INFO ] [SeleniumActions] - The Click on a WebElement: [[ChromeDriver: chrome on windows (fe14775e7464a0246c3f7a2c384fb862)] -> xpath: //button[@id='submit']]
+22:47:55.583 [INFO ] [LoginPage] - Click on Submit Button
+22:47:55.583 [INFO ] [ContactsFrontTest] - 
+ ----------------------------------------------------------------------
+22:47:55.583 [INFO ] [ContactsFrontTest] -  -------------- Step 2 Click on Add New Contact Button ------------------
+22:47:55.614 [INFO ] [ExplicitWaits] - Waiting for max:: 10 seconds for element Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='add-contact']' to be clickable
+22:47:56.594 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (fe14775e7464a0246c3f7a2c384fb862)] -> xpath: //button[@id='add-contact']] is clickable
+22:47:57.199 [INFO ] [SeleniumActions] - The Click on a WebElement: Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='add-contact']'
+22:47:57.199 [INFO ] [ContactsPage] - Click on Submit Button
+22:47:57.200 [INFO ] [ContactsFrontTest] - 
+ ----------------------------------------------------------------------
+22:47:57.200 [INFO ] [ContactsFrontTest] -  -------------- Step 3 Fill the Form ------------------
+22:47:57.222 [INFO ] [ExplicitWaits] - Waiting for max:: 10 seconds for element [[ChromeDriver: chrome on windows (fe14775e7464a0246c3f7a2c384fb862)] -> xpath: //h1] to be visible
+22:47:57.279 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (fe14775e7464a0246c3f7a2c384fb862)] -> xpath: //h1] is present
+22:47:57.322 [INFO ] [SeleniumActions] - The text of the WebElement: [[ChromeDriver: chrome on windows (fe14775e7464a0246c3f7a2c384fb862)] -> xpath: //h1] is : Add Contact
+22:47:57.323 [INFO ] [SupportValidations] - The Actual Header is: Add Contact The Expected Header is: Add Contact

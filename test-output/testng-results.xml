@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-30T14:15:14 CST" name="Suite" finished-at="2024-07-30T14:16:25 CST" duration-ms="70910">
+  <suite started-at="2024-07-31T01:24:05 CST" name="Suite" finished-at="2024-07-31T01:25:18 CST" duration-ms="73801">
     <groups>
     </groups>
-    <test started-at="2024-07-30T14:15:14 CST" name="Test" finished-at="2024-07-30T14:16:25 CST" duration-ms="70910">
+    <test started-at="2024-07-31T01:24:05 CST" name="Test" finished-at="2024-07-31T01:25:18 CST" duration-ms="73801">
       <class name="back.suites.ContactsTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:14 CST" name="beforeTest" finished-at="2024-07-30T14:15:14 CST" duration-ms="238" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:back.suites.ContactsTest@7072bc39]" started-at="2024-07-31T01:24:05 CST" name="beforeTest" finished-at="2024-07-31T01:24:05 CST" duration-ms="280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:14 CST" name="beforeClass" finished-at="2024-07-30T14:15:14 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:back.suites.ContactsTest@7072bc39]" started-at="2024-07-31T01:24:05 CST" name="beforeClass" finished-at="2024-07-31T01:24:05 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:15 CST" name="beforeMethod" finished-at="2024-07-30T14:15:16 CST" duration-ms="967" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:back.suites.ContactsTest@7072bc39]" started-at="2024-07-31T01:24:06 CST" name="beforeMethod" finished-at="2024-07-31T01:24:08 CST" duration-ms="2096" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="addContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:16 CST" name="addContact" data-provider="addContactsTestData" finished-at="2024-07-30T14:15:21 CST" duration-ms="5203" status="PASS">
+        <test-method signature="addContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:back.suites.ContactsTest@7072bc39]" started-at="2024-07-31T01:24:08 CST" name="addContact" data-provider="addContactsTestData" finished-at="2024-07-31T01:24:15 CST" duration-ms="6825" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,22 +45,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addContact -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:21 CST" name="afterMethod" finished-at="2024-07-30T14:15:21 CST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:back.suites.ContactsTest@7072bc39]" started-at="2024-07-31T01:24:15 CST" name="afterMethod" finished-at="2024-07-31T01:24:15 CST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addContact status=SUCCESS method=ContactsTest.addContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:back.suites.ContactsTest@5149f008] output={null}]]]>
+                <![CDATA[[TestResult name=addContact status=SUCCESS method=ContactsTest.addContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:back.suites.ContactsTest@7072bc39] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:21 CST" name="beforeMethod" finished-at="2024-07-30T14:15:21 CST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:back.suites.ContactsTest@7072bc39]" started-at="2024-07-31T01:24:15 CST" name="beforeMethod" finished-at="2024-07-31T01:24:15 CST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="deleteContact(java.lang.String,java.lang.String)[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:21 CST" name="deleteContact" data-provider="deleteContactsTestData" finished-at="2024-07-30T14:15:53 CST" duration-ms="31547" status="PASS">
+        <test-method signature="deleteContact(java.lang.String,java.lang.String)[pri:0, instance:back.suites.ContactsTest@7072bc39]" started-at="2024-07-31T01:24:15 CST" name="deleteContact" data-provider="deleteContactsTestData" finished-at="2024-07-31T01:24:47 CST" duration-ms="31607" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -76,22 +76,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteContact -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:53 CST" name="afterMethod" finished-at="2024-07-30T14:15:53 CST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:back.suites.ContactsTest@7072bc39]" started-at="2024-07-31T01:24:47 CST" name="afterMethod" finished-at="2024-07-31T01:24:47 CST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=deleteContact status=SUCCESS method=ContactsTest.deleteContact(java.lang.String,java.lang.String)[pri:0, instance:back.suites.ContactsTest@5149f008] output={null}]]]>
+                <![CDATA[[TestResult name=deleteContact status=SUCCESS method=ContactsTest.deleteContact(java.lang.String,java.lang.String)[pri:0, instance:back.suites.ContactsTest@7072bc39] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:53 CST" name="beforeMethod" finished-at="2024-07-30T14:15:53 CST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:back.suites.ContactsTest@7072bc39]" started-at="2024-07-31T01:24:47 CST" name="beforeMethod" finished-at="2024-07-31T01:24:47 CST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="updateContact(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:15:53 CST" name="updateContact" data-provider="updateContactsTestData" finished-at="2024-07-30T14:16:24 CST" duration-ms="30962" status="PASS">
+        <test-method signature="updateContact(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:back.suites.ContactsTest@7072bc39]" started-at="2024-07-31T01:24:47 CST" name="updateContact" data-provider="updateContactsTestData" finished-at="2024-07-31T01:25:18 CST" duration-ms="31008" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -112,22 +112,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateContact -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:16:24 CST" name="afterMethod" finished-at="2024-07-30T14:16:24 CST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:back.suites.ContactsTest@7072bc39]" started-at="2024-07-31T01:25:18 CST" name="afterMethod" finished-at="2024-07-31T01:25:18 CST" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=updateContact status=SUCCESS method=ContactsTest.updateContact(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:back.suites.ContactsTest@5149f008] output={null}]]]>
+                <![CDATA[[TestResult name=updateContact status=SUCCESS method=ContactsTest.updateContact(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:back.suites.ContactsTest@7072bc39] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:16:24 CST" name="afterClass" finished-at="2024-07-30T14:16:24 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:back.suites.ContactsTest@7072bc39]" started-at="2024-07-31T01:25:18 CST" name="afterClass" finished-at="2024-07-31T01:25:18 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:back.suites.ContactsTest@5149f008]" started-at="2024-07-30T14:16:24 CST" name="afterTest" finished-at="2024-07-30T14:16:25 CST" duration-ms="474" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:back.suites.ContactsTest@7072bc39]" started-at="2024-07-31T01:25:18 CST" name="afterTest" finished-at="2024-07-31T01:25:18 CST" duration-ms="474" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

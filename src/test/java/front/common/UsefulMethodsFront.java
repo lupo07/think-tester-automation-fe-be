@@ -16,14 +16,28 @@ import org.openqa.selenium.remote.LocalFileDetector;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 
-public class UsefulMethods {
+public class UsefulMethodsFront {
 	WebDriver driver;
-	private static final Logger log = LogManager.getLogger(UsefulMethods.class.getName());
+	private static final Logger log = LogManager.getLogger(UsefulMethodsFront.class.getName());
 
-	public UsefulMethods(WebDriver driver) {
+	public UsefulMethodsFront(WebDriver driver) {
 		this.driver = driver;
 	}
-		
+	
+	
+	/**
+	 * 
+	 * This method Parses the string argument as a signed decimal integer
+	 * 
+	 * @param number
+	 * @return num
+	 */
+	public int stringToInt(String number) {
+		int num = Integer.parseInt(number);
+		log.info("The string has been changed into a int : " + num);
+		return num;
+	}
+	
 	public String getScreenshotBase64(WebDriver driver, String filename) {
 		String encodedBase64 = null;
 		TakesScreenshot tsc = (TakesScreenshot) driver;

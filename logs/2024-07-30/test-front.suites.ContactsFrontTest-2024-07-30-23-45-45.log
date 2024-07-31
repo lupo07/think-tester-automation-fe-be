@@ -1,0 +1,144 @@
+23:45:45.908 [INFO ] [BaseTestFront] - The Test Suite front.suites.ContactsFrontTest has started
+23:45:49.279 [INFO ] [BaseTestFront] - Local Driver
+23:45:49.280 [INFO ] [BaseTestFront] -  Base Url: https://thinking-tester-contact-list.herokuapp.com/ Browser: chrome
+23:45:49.284 [INFO ] [BaseTestFront] - Driver: ChromeDriver: chrome on windows (ad252056d48a68eec397e8298ab7c8c4)
+23:45:53.542 [INFO ] [ContactsFrontTest] - The Test Suite front.suites.ContactsFrontTest has started
+23:45:53.553 [INFO ] [ContactsFrontTest] - 
+ ----------------------------------------------------------------------
+23:45:53.582 [INFO ] [ContactsFrontTest] -  -------------- Step 1 Login Page ------------------
+23:45:53.599 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for string Contact List App to be present in the Element
+23:45:53.704 [INFO ] [ExplicitWaits] - The element contains: Contact List App
+23:45:53.776 [INFO ] [SeleniumActions] - The text of the WebElement: [[ChromeDriver: chrome on windows (ad252056d48a68eec397e8298ab7c8c4)] -> xpath: //h1] is : Contact List App
+23:45:53.776 [INFO ] [SupportValidations] - The Actual Header is: Contact List App The Expected Header is: Contact List App
+23:45:53.808 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (ad252056d48a68eec397e8298ab7c8c4)] -> xpath: //input[@id='email']] to be visible
+23:45:53.993 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (ad252056d48a68eec397e8298ab7c8c4)] -> xpath: //input[@id='email']] is present
+23:45:54.375 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (ad252056d48a68eec397e8298ab7c8c4)] -> xpath: //input[@id='email']]
+23:45:54.376 [INFO ] [LoginPage] - Fill the input with the email: outputmail@gmail.com
+23:45:54.400 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (ad252056d48a68eec397e8298ab7c8c4)] -> xpath: //input[@id='password']] to be visible
+23:45:54.456 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (ad252056d48a68eec397e8298ab7c8c4)] -> xpath: //input[@id='password']] is present
+23:45:54.659 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (ad252056d48a68eec397e8298ab7c8c4)] -> xpath: //input[@id='password']]
+23:45:54.659 [INFO ] [LoginPage] - Fill the input with the email: Test#123
+23:45:54.679 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (ad252056d48a68eec397e8298ab7c8c4)] -> xpath: //button[@id='submit']] to be clickable
+23:45:54.756 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (ad252056d48a68eec397e8298ab7c8c4)] -> xpath: //button[@id='submit']] is clickable
+23:45:54.849 [INFO ] [SeleniumActions] - The Click on a WebElement: [[ChromeDriver: chrome on windows (ad252056d48a68eec397e8298ab7c8c4)] -> xpath: //button[@id='submit']]
+23:45:54.849 [INFO ] [LoginPage] - Click on Submit Button
+23:45:54.850 [INFO ] [ContactsFrontTest] - 
+ ----------------------------------------------------------------------
+23:45:54.851 [INFO ] [ContactsFrontTest] -  -------------- Step 2 Click on Add New Contact Button ------------------
+23:45:54.852 [INFO ] [ExplicitWaits] - Waiting for max:: 10 seconds for string Contact List to be present in the Element
+23:45:54.881 [INFO ] [ExplicitWaits] - The element contains: Contact List
+23:45:54.920 [INFO ] [SeleniumActions] - The text of the WebElement: [[ChromeDriver: chrome on windows (ad252056d48a68eec397e8298ab7c8c4)] -> xpath: //h1] is : Contact List App
+23:45:54.920 [INFO ] [SupportValidations] - The Actual Header is: Contact List App The Expected Header is: Contact List
+23:45:54.946 [INFO ] [BaseTestFront] - ======FAILED=====
+23:45:55.672 [INFO ] [BaseTestFront] - Exception: java.lang.AssertionError: expected [Contact List] but found [Contact List App]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at front.common.SupportValidations.verifyPageHeader(SupportValidations.java:50)
+	at front.pages.ContactsPage.verifyContactsPage(ContactsPage.java:49)
+	at front.suites.ContactsFrontTest.addContact(ContactsFrontTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+23:45:55.680 [INFO ] [BaseTestFront] - ----------------------------------------------------------------------
+23:45:55.681 [INFO ] [BaseTestFront] -  -------------- The Test addContact has been completed
+23:45:55.681 [INFO ] [BaseTestFront] - ----------------------------------------------------------------------
+23:45:56.212 [INFO ] [BaseTestFront] - The Test Suite front.suites.ContactsFrontTest has started
+23:45:59.188 [INFO ] [BaseTestFront] - Local Driver
+23:45:59.188 [INFO ] [BaseTestFront] -  Base Url: https://thinking-tester-contact-list.herokuapp.com/ Browser: chrome
+23:45:59.189 [INFO ] [BaseTestFront] - Driver: ChromeDriver: chrome on windows (e41092bdbbfdc85e51debd005605a35b)
+23:46:02.714 [INFO ] [ContactsFrontTest] - The Test Suite front.suites.ContactsFrontTest has started
+23:46:02.715 [INFO ] [ContactsFrontTest] - 
+ ----------------------------------------------------------------------
+23:46:02.715 [INFO ] [ContactsFrontTest] -  -------------- Step 1 Login Page ------------------
+23:46:02.716 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for string Contact List App to be present in the Element
+23:46:02.784 [INFO ] [ExplicitWaits] - The element contains: Contact List App
+23:46:02.833 [INFO ] [SeleniumActions] - The text of the WebElement: [[ChromeDriver: chrome on windows (e41092bdbbfdc85e51debd005605a35b)] -> xpath: //h1] is : Contact List App
+23:46:02.834 [INFO ] [SupportValidations] - The Actual Header is: Contact List App The Expected Header is: Contact List App
+23:46:02.869 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (e41092bdbbfdc85e51debd005605a35b)] -> xpath: //input[@id='email']] to be visible
+23:46:02.957 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (e41092bdbbfdc85e51debd005605a35b)] -> xpath: //input[@id='email']] is present
+23:46:03.275 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (e41092bdbbfdc85e51debd005605a35b)] -> xpath: //input[@id='email']]
+23:46:03.275 [INFO ] [LoginPage] - Fill the input with the email: outputmail@gmail.com
+23:46:03.345 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (e41092bdbbfdc85e51debd005605a35b)] -> xpath: //input[@id='password']] to be visible
+23:46:03.413 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (e41092bdbbfdc85e51debd005605a35b)] -> xpath: //input[@id='password']] is present
+23:46:03.624 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (e41092bdbbfdc85e51debd005605a35b)] -> xpath: //input[@id='password']]
+23:46:03.625 [INFO ] [LoginPage] - Fill the input with the email: Test#123
+23:46:03.642 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (e41092bdbbfdc85e51debd005605a35b)] -> xpath: //button[@id='submit']] to be clickable
+23:46:03.709 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (e41092bdbbfdc85e51debd005605a35b)] -> xpath: //button[@id='submit']] is clickable
+23:46:03.802 [INFO ] [SeleniumActions] - The Click on a WebElement: [[ChromeDriver: chrome on windows (e41092bdbbfdc85e51debd005605a35b)] -> xpath: //button[@id='submit']]
+23:46:03.802 [INFO ] [LoginPage] - Click on Submit Button
+23:46:03.803 [INFO ] [ContactsFrontTest] - 
+ ----------------------------------------------------------------------
+23:46:03.803 [INFO ] [ContactsFrontTest] -  -------------- Step 2 Click on an existing Contact Row ------------------
+23:46:03.804 [INFO ] [ExplicitWaits] - Waiting for max:: 10 seconds for string Contact List to be present in the Element
+23:46:03.830 [INFO ] [ExplicitWaits] - The element contains: Contact List
+23:46:03.874 [INFO ] [SeleniumActions] - The text of the WebElement: [[ChromeDriver: chrome on windows (e41092bdbbfdc85e51debd005605a35b)] -> xpath: //h1] is : Contact List App
+23:46:03.875 [INFO ] [SupportValidations] - The Actual Header is: Contact List App The Expected Header is: Contact List
+23:46:03.884 [INFO ] [BaseTestFront] - ======FAILED=====
+23:46:04.619 [INFO ] [BaseTestFront] - Exception: java.lang.AssertionError: expected [Contact List] but found [Contact List App]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at front.common.SupportValidations.verifyPageHeader(SupportValidations.java:50)
+	at front.pages.ContactsPage.verifyContactsPage(ContactsPage.java:49)
+	at front.suites.ContactsFrontTest.deleteContact(ContactsFrontTest.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+23:46:04.622 [INFO ] [BaseTestFront] - ----------------------------------------------------------------------
+23:46:04.623 [INFO ] [BaseTestFront] -  -------------- The Test deleteContact has been completed
+23:46:04.623 [INFO ] [BaseTestFront] - ----------------------------------------------------------------------

@@ -1,0 +1,48 @@
+19:58:10.275 [INFO ] [BaseTestFront] - The Test Suite front.suites.ContactsFrontTest has started
+19:58:49.774 [INFO ] [BaseTestFront] - Local Driver
+19:58:49.775 [INFO ] [BaseTestFront] -  Base Url: https://www.demoblaze.com/ Browser: chrome
+19:58:49.775 [INFO ] [BaseTestFront] - Driver: ChromeDriver: chrome on windows (ba8850639eff422f738078c3a8f95270)
+19:58:55.590 [INFO ] [ContactsFrontTest] - The Test Suite front.suites.ContactsFrontTest has started
+19:58:55.643 [INFO ] [ContactsFrontTest] - 
+ ----------------------------------------------------------------------
+19:58:55.718 [INFO ] [ContactsFrontTest] -  -------------- Step 1 Search for the Product ------------------
+19:58:55.770 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element Proxy element for: DefaultElementLocator 'By.xpath: //h1' to be visible
+19:59:11.375 [INFO ] [BaseTestFront] - ======FAILED=====
+19:59:12.333 [INFO ] [BaseTestFront] - Exception: java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at front.common.SupportValidations.verifyPageHeader(SupportValidations.java:45)
+	at front.pages.LoginPage.verifyLoginPage(LoginPage.java:48)
+	at front.suites.ContactsFrontTest.addContact(ContactsFrontTest.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+19:59:12.370 [INFO ] [BaseTestFront] - ----------------------------------------------------------------------
+19:59:12.374 [INFO ] [BaseTestFront] -  -------------- The Test addContact has been completed
+19:59:12.381 [INFO ] [BaseTestFront] - ----------------------------------------------------------------------

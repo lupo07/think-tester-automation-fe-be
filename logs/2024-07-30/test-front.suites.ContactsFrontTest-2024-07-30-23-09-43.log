@@ -1,0 +1,93 @@
+23:09:43.155 [INFO ] [BaseTestFront] - The Test Suite front.suites.ContactsFrontTest has started
+23:09:46.973 [INFO ] [BaseTestFront] - Local Driver
+23:09:46.973 [INFO ] [BaseTestFront] -  Base Url: https://thinking-tester-contact-list.herokuapp.com/ Browser: chrome
+23:09:46.978 [INFO ] [BaseTestFront] - Driver: ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)
+23:09:50.278 [INFO ] [ContactsFrontTest] - The Test Suite front.suites.ContactsFrontTest has started
+23:09:50.285 [INFO ] [ContactsFrontTest] - 
+ ----------------------------------------------------------------------
+23:09:50.306 [INFO ] [ContactsFrontTest] -  -------------- Step 1 Login Page ------------------
+23:09:50.364 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //h1] to be visible
+23:09:50.494 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //h1] is present
+23:09:50.568 [INFO ] [SeleniumActions] - The text of the WebElement: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //h1] is : Contact List App
+23:09:50.569 [INFO ] [SupportValidations] - The Actual Header is: Contact List App The Expected Header is: Contact List App
+23:09:50.596 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input[@id='email']] to be visible
+23:09:50.656 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input[@id='email']] is present
+23:09:50.923 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input[@id='email']]
+23:09:50.923 [INFO ] [LoginPage] - Fill the input with the email: outputmail@gmail.com
+23:09:50.943 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input[@id='password']] to be visible
+23:09:50.990 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input[@id='password']] is present
+23:09:51.209 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input[@id='password']]
+23:09:51.209 [INFO ] [LoginPage] - Fill the input with the email: Test#123
+23:09:51.228 [INFO ] [ExplicitWaits] - Waiting for max:: 15 seconds for element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //button[@id='submit']] to be clickable
+23:09:51.312 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //button[@id='submit']] is clickable
+23:09:51.415 [INFO ] [SeleniumActions] - The Click on a WebElement: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //button[@id='submit']]
+23:09:51.416 [INFO ] [LoginPage] - Click on Submit Button
+23:09:51.416 [INFO ] [ContactsFrontTest] - 
+ ----------------------------------------------------------------------
+23:09:51.417 [INFO ] [ContactsFrontTest] -  -------------- Step 2 Click on Add New Contact Button ------------------
+23:09:51.451 [INFO ] [ExplicitWaits] - Waiting for max:: 10 seconds for element Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='add-contact']' to be clickable
+23:09:52.262 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //button[@id='add-contact']] is clickable
+23:09:52.871 [INFO ] [SeleniumActions] - The Click on a WebElement: Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='add-contact']'
+23:09:52.872 [INFO ] [ContactsPage] - Click on Submit Button
+23:09:52.874 [INFO ] [ContactsFrontTest] - 
+ ----------------------------------------------------------------------
+23:09:52.875 [INFO ] [ContactsFrontTest] -  -------------- Step 3 Fill the Form ------------------
+23:09:52.892 [INFO ] [ExplicitWaits] - Waiting for max:: 10 seconds for element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //h1] to be visible
+23:09:52.946 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //h1] is present
+23:09:52.986 [INFO ] [SeleniumActions] - The text of the WebElement: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //h1] is : Add Contact
+23:09:52.986 [INFO ] [SupportValidations] - The Actual Header is: Add Contact The Expected Header is: Add Contact
+23:09:53.029 [INFO ] [ExplicitWaits] - Waiting for max:: 10 seconds for element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] to be visible
+23:09:53.048 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] is present
+23:09:53.490 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input]
+23:09:53.519 [INFO ] [AddContactsPage] - Fill the input: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] with the value: Toji
+23:09:53.553 [INFO ] [ExplicitWaits] - Waiting for max:: 10 seconds for element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] to be visible
+23:09:53.574 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] is present
+23:09:53.759 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input]
+23:09:53.781 [INFO ] [AddContactsPage] - Fill the input: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] with the value: Fushiguro
+23:09:53.812 [INFO ] [ExplicitWaits] - Waiting for max:: 10 seconds for element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] to be visible
+23:09:53.832 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] is present
+23:09:53.982 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input]
+23:09:54.002 [INFO ] [AddContactsPage] - Fill the input: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] with the value: 1985-04-07
+23:09:54.032 [INFO ] [ExplicitWaits] - Waiting for max:: 10 seconds for element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] to be visible
+23:09:54.049 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] is present
+23:09:54.242 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input]
+23:09:54.261 [INFO ] [AddContactsPage] - Fill the input: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] with the value: fushiToji@fake.com
+23:09:54.296 [INFO ] [ExplicitWaits] - Waiting for max:: 10 seconds for element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] to be visible
+23:09:54.321 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] is present
+23:09:54.508 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input]
+23:09:54.532 [INFO ] [AddContactsPage] - Fill the input: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] with the value: 6537892902
+23:09:54.576 [INFO ] [ExplicitWaits] - Waiting for max:: 10 seconds for element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] to be visible
+23:09:54.600 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] is present
+23:09:54.789 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input]
+23:09:54.814 [INFO ] [AddContactsPage] - Fill the input: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] with the value: Sakura st 1432
+23:09:54.846 [INFO ] [ExplicitWaits] - Waiting for max:: 10 seconds for element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] to be visible
+23:09:54.867 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] is present
+23:09:55.016 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input]
+23:09:55.033 [INFO ] [AddContactsPage] - Fill the input: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] with the value: Neko 123
+23:09:55.062 [INFO ] [ExplicitWaits] - Waiting for max:: 10 seconds for element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] to be visible
+23:09:55.081 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] is present
+23:09:55.229 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input]
+23:09:55.249 [INFO ] [AddContactsPage] - Fill the input: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] with the value: Shibuya
+23:09:55.281 [INFO ] [ExplicitWaits] - Waiting for max:: 10 seconds for element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] to be visible
+23:09:55.301 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] is present
+23:09:55.454 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input]
+23:09:55.479 [INFO ] [AddContactsPage] - Fill the input: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] with the value: Tokyo
+23:09:55.515 [INFO ] [ExplicitWaits] - Waiting for max:: 10 seconds for element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] to be visible
+23:09:55.532 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] is present
+23:09:55.678 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input]
+23:09:55.698 [INFO ] [AddContactsPage] - Fill the input: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] with the value: 245357
+23:09:55.743 [INFO ] [ExplicitWaits] - Waiting for max:: 10 seconds for element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] to be visible
+23:09:55.763 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] is present
+23:09:55.894 [INFO ] [SeleniumActions] - Send the text to the WebElement: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input]
+23:09:55.913 [INFO ] [AddContactsPage] - Fill the input: [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //input] with the value: JP
+23:09:55.930 [INFO ] [ContactsFrontTest] - 
+ ----------------------------------------------------------------------
+23:09:55.930 [INFO ] [ContactsFrontTest] -  -------------- Step 4 Submit the Form ------------------
+23:09:55.943 [INFO ] [ExplicitWaits] - Waiting for max:: 10 seconds for element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //button[@id='submit']] to be clickable
+23:09:56.002 [INFO ] [ExplicitWaits] - Element [[ChromeDriver: chrome on windows (405aa1b5305f9f374b883425019c4631)] -> xpath: //button[@id='submit']] is clickable
+23:09:56.594 [INFO ] [SeleniumActions] - The Click on a WebElement: Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='submit']'
+23:09:56.595 [INFO ] [AddContactsPage] - Click on Submit Button
+23:09:56.603 [INFO ] [BaseTestFront] - ======PASSED=====
+23:09:56.605 [INFO ] [BaseTestFront] - ----------------------------------------------------------------------
+23:09:56.605 [INFO ] [BaseTestFront] -  -------------- The Test addContact has been completed
+23:09:56.606 [INFO ] [BaseTestFront] - ----------------------------------------------------------------------

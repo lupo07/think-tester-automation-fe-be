@@ -4,13 +4,14 @@
 	<parameter name="startDocker" value="local" />
 	<parameter name="runType" value="local" />
 	<parameter name="environment" value="test" />
+
 	<test name="Test">
 		<classes>
-			<class name="back.suites.ContactsTest">
+			<class name="front.suites.ContactsFrontTest">
 				<methods>
-					<include name="addContact" />
-					<include name="updateContact" />
-					<include name="deleteContact" />
+					<include name="addContact"/>
+					<include name="deleteContact"/>
+					<include name="editContact"/>
 				</methods>
 			</class>
 		</classes>
