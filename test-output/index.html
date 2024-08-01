@@ -170,9 +170,19 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot;&gt;
+  &lt;parameter name=&quot;environment&quot; value=&quot;test&quot;/&gt;
+  &lt;parameter name=&quot;runType&quot; value=&quot;local&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;startDocker&quot; value=&quot;local&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;back.suites.ContactsTest&quot;/&gt;
+      &lt;class name=&quot;back.suites.ContactsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;addContact&quot;/&gt;
+          &lt;include name=&quot;updateContact&quot;/&gt;
+          &lt;include name=&quot;deleteContact&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- back.suites.ContactsTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -214,17 +224,17 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'deleteContact')
+data.setCell(0, 1, 'updateContact')
 data.setCell(0, 2, 'back.suites.ContactsTest')
-data.setCell(0, 3, 31607);
+data.setCell(0, 3, 32185);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'updateContact')
+data.setCell(1, 1, 'deleteContact')
 data.setCell(1, 2, 'back.suites.ContactsTest')
-data.setCell(1, 3, 31008);
+data.setCell(1, 3, 30960);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'addContact')
 data.setCell(2, 2, 'back.suites.ContactsTest')
-data.setCell(2, 3, 6825);
+data.setCell(2, 3, 9005);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -262,51 +272,51 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">306 ms</span>
+                <span class="method-start">503 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">1530 ms</span>
+                <span class="method-start">2255 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addContact({ "email": "outputmail@gmail.com", "password": "Test#123"}, "token", {"firstName":"Satoru","lastName...)</span>
-                <span class="method-start">3627 ms</span>
+                <span class="method-start">3899 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=addContact status=SUCCESS method=ContactsTest.addContact(java.lang.String,java.lang...)</span>
-                <span class="method-start">10459 ms</span>
+                <span class="method-start">12926 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">10575 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">deleteContact({ "email": "outputmail@gmail.com", "password": "Test#123"}, "token")</span>
-                <span class="method-start">10578 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=deleteContact status=SUCCESS method=ContactsTest.deleteContact(java.lang.String,jav...)</span>
-                <span class="method-start">42189 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">42273 ms</span>
+                <span class="method-start">13153 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">updateContact({ "email": "outputmail@gmail.com", "password": "Test#123"}, "token", { "firstName": "Sattoru"})</span>
-                <span class="method-start">42275 ms</span>
+                <span class="method-start">13157 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=updateContact status=SUCCESS method=ContactsTest.updateContact(java.lang.String,jav...)</span>
-                <span class="method-start">73295 ms</span>
+                <span class="method-start">45349 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">45480 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteContact({ "email": "outputmail@gmail.com", "password": "Test#123"}, "token")</span>
+                <span class="method-start">45484 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=deleteContact status=SUCCESS method=ContactsTest.deleteContact(java.lang.String,jav...)</span>
+                <span class="method-start">76455 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">73305 ms</span>
+                <span class="method-start">76462 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">73307 ms</span>
+                <span class="method-start">76467 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

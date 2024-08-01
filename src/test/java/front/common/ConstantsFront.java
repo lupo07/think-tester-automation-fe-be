@@ -7,7 +7,7 @@ public class ConstantsFront {
 	public static final int EXPLICIT_WAIT_CONTACTS_PAGE = 10;
 	public static final int EXPLICIT_WAIT_CONTACT_DETAILS_PAGE = 10;
 	
-	public static final String FILE_PATH_CONTACTS_TEST= "C://think-tester-automation-fe-be//src//test//resources//";
+	public static final String FILE_PATH_CONTACTS_TEST= ".//src//test//resources//";
 	public static final String FILE_NAME_CONTACTS_TEST= "ContactsFrontTestData.xlsx";
 	
 	public static final String LOGIN_PAGE_HEADER = "Contact List App";
