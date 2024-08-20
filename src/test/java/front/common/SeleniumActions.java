@@ -13,11 +13,13 @@ import org.openqa.selenium.interactions.Actions;
 public class SeleniumActions {
 	WebDriver driver;
 	Actions actions;
+	JavaScriptFunctions jvsf;
 	private static final Logger log = LogManager.getLogger(SeleniumActions.class.getName());
 
 	public SeleniumActions(WebDriver driver) {
 		this.driver = driver;
 		actions = new Actions(driver);
+		jvsf = new JavaScriptFunctions(driver);
 	}
 
 	/**
@@ -57,5 +59,13 @@ public class SeleniumActions {
 		log.info("Send the text to the WebElement: "+ webElement  );		
 	}
 	
+	/**
+	 * 
+	 * @param webElement
+	 * @return
+	 */
+	public boolean isElementDisplayed (WebElement webElement) {
+		return webElement.isDisplayed();
+	}
 	
 }

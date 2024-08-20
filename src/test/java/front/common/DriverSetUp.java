@@ -1,4 +1,5 @@
 package front.common;
+import java.net.URI;
 import java.net.URL;
 
 import org.apache.logging.log4j.LogManager;
@@ -57,12 +58,10 @@ public class DriverSetUp {
 		try {
 			if (browser.equalsIgnoreCase("chrome")) {
 				ChromeOptions options= new ChromeOptions();
-				URL u = new URL (url);
-				rdriver = new RemoteWebDriver(u, options);	
+				rdriver = new RemoteWebDriver((new URI(url)).toURL(), options);	
 			} else if (browser.equalsIgnoreCase("firefox")) {
 				FirefoxOptions options = new FirefoxOptions();
-				URL u = new URL (url);
-				rdriver = new RemoteWebDriver(u,options);
+				rdriver = new RemoteWebDriver((new URI(url)).toURL(),options);
 			}
 		} catch (Exception e) {
 			log.error(browser + " is not a valid browser");

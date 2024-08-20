@@ -1,5 +1,8 @@
 package front.pages;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -50,6 +53,13 @@ public class LoginPage {
 	 */
 	public void verifyLoginPage(String product) {
 		spv.verifyPageHeader(loginHeader, product, ConstantsFront.EXPLICIT_WAIT_LOGIN_PAGE);
+		List<WebElement> pageElements = new ArrayList<WebElement>();
+		pageElements.add(emailInput);
+		pageElements.add(passwordInput);
+		pageElements.add(submitButton);
+		
+		spv.pageDisplayElemetSoftAssertions(pageElements);
+
 	}
 	
 	/**

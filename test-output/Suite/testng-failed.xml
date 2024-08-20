@@ -2,18 +2,20 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
   <parameter name="environment" value="test"/>
-  <parameter name="runType" value="local"/>
+  <parameter name="runType" value="remote"/>
   <parameter name="browser" value="chrome"/>
-  <parameter name="startDocker" value="local"/>
+  <parameter name="startDocker" value="alone"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="front.suites.ContactsFrontTest">
         <methods>
+          <include name="addContact"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="editContact" invocation-numbers="0"/>
+          <include name="editContact"/>
+          <include name="deleteContact"/>
           <include name="setClasses"/>
           <include name="afterTest"/>
         </methods>

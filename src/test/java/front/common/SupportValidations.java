@@ -1,11 +1,13 @@
 package front.common;
 
+import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 public class SupportValidations {
 	WebDriver driver;
@@ -31,8 +33,7 @@ public class SupportValidations {
 		log.info("The Actual String is Contains the Expected String: " + expectedStr);
 		Assert.assertTrue(actualStr.contains(expectedStr));
 	}
-	
-	
+
 	/**
 	 * 
 	 * This method verifies that a WebElement has the right Header
@@ -42,17 +43,29 @@ public class SupportValidations {
 	 * @param timeout
 	 */
 	public void verifyPageHeader(WebElement wElement, String expectedHeader, int timeout) {
-		Assert.assertTrue(
-				exwait.waitForVisibilityOfElement(wElement, timeout));
+		Assert.assertTrue(exwait.waitForVisibilityOfElement(wElement, timeout));
 		String str = selact.getElementText(wElement);
-		
+
 		log.info("The Actual Header is: " + str + " The Expected Header is: " + expectedHeader);
 		Assert.assertEquals(str, expectedHeader);
 	}
-	
-	
-	
 
-	
+	/**
+	 * 
+	 * This method does softassertions on webelements
+	 * 
+	 * @param elements
+	 */
+	public void pageDisplayElemetSoftAssertions(List<WebElement> elements) {
+		SoftAssert soft = new SoftAssert();
+
+		for (int i = 0; i < elements.size(); i++) {
+			boolean found = selact.isElementDisplayed(elements.get(i));
+			soft.assertTrue(found);
+			log.info("Found: " + found + " " + elements.get(i));
+		}
+
+		soft.assertAll();
+	}
 
 }

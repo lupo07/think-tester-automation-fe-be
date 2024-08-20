@@ -2,6 +2,7 @@ package front.common;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
@@ -33,10 +34,10 @@ public class ExplicitWaits {
 	public ExplicitWaits(WebDriver driver) {
 		this.driver = driver;
 	}
-	
-	
+
 	/**
-	 * Sets the amount of time in SECONDS to wait for a page load to complete before returns false.
+	 * Sets the amount of time in SECONDS to wait for a page load to complete before
+	 * returns false.
 	 * 
 	 * If the timeout is negative, page loads can be indefinite.
 	 * 
@@ -50,7 +51,7 @@ public class ExplicitWaits {
 			return true;
 
 		} catch (Exception e) {
-			log.error("The page didn't finished loading... "+ e);
+			log.error("The page didn't finished loading... " + e);
 			return false;
 		}
 	}
@@ -116,7 +117,7 @@ public class ExplicitWaits {
 	 * @param timeout
 	 * @return boolean
 	 */
-	public boolean waitForElementToContain(WebElement webEl,String expString, int timeout) {
+	public boolean waitForElementToContain(WebElement webEl, String expString, int timeout) {
 		if (expString != null) {
 			try {
 				log.info("Waiting for max:: " + timeout + " seconds for string " + expString
@@ -134,8 +135,7 @@ public class ExplicitWaits {
 			log.error("The String is null");
 		return false;
 	}
-	
-	
+
 	/**
 	 * Method to wait for the WebElement to be clickable
 	 * 
@@ -165,7 +165,22 @@ public class ExplicitWaits {
 		return false;
 
 	}
-	
+
+	/**
+	 * Method to wait for an specific amount of time without condition
+	 * 
+	 * @param webEl
+	 * @param timeout
+	 */
+	public void waitNoCondition(int timeout) {
+		try {
+			TimeUnit.MILLISECONDS.sleep(timeout);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+
+	}
+
 	/**
 	 * Method for wait the visibility of an element using the fluent wait
 	 * 
@@ -183,7 +198,7 @@ public class ExplicitWaits {
 
 				Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(timeout))
 						.pollingEvery(Duration.ofSeconds(polling)).ignoring(NoSuchElementException.class);
-				
+
 				wait.until(ExpectedConditions.visibilityOf(webEl));
 				log.info("Element " + webEl.toString() + " is present");
 				return true;
@@ -197,16 +212,16 @@ public class ExplicitWaits {
 		return false;
 	}
 
-	
-
 	/**
-	 * Looks for a List of WebElements repeatedly by pooling intervals until timeout happens or until the object is found.
+	 * Looks for a List of WebElements repeatedly by pooling intervals until timeout
+	 * happens or until the object is found.
 	 * 
-	 * @param webEl - List/collection of WebWlement
+	 * @param webEl   - List/collection of WebWlement
 	 * @param timeout - Time in SECONDS
 	 * @param polling - Time in SECONDS
 	 * 
-	 * @return Boolean value - Returns false if the whole List of elements is not visible after the timeout.
+	 * @return Boolean value - Returns false if the whole List of elements is not
+	 *         visible after the timeout.
 	 */
 	public boolean fluentWaitForVisibilityOfElements(List<WebElement> webEl, int timeout, int polling) {
 		if (webEl != null) {
@@ -214,7 +229,7 @@ public class ExplicitWaits {
 			try {
 
 				log.info("Waiting for max: " + timeout + " seconds for element " + webEl2.toString()
-				+ " with polling of " + polling + " to be visible");
+						+ " with polling of " + polling + " to be visible");
 
 				Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(timeout))
 						.pollingEvery(Duration.ofSeconds(polling)).ignoring(NoSuchElementException.class);
@@ -234,16 +249,18 @@ public class ExplicitWaits {
 	/**
 	 * Method to wait for the visibility of a group of Elements
 	 * 
-	 * @param webEl - List/collection of WebWlement
+	 * @param webEl   - List/collection of WebWlement
 	 * @param timeout - Time in SECONDS
-	 * @return Boolean value - Returns false if either one element of the List is still visible after the timeout or true when all elements are not visible anymore
+	 * @return Boolean value - Returns false if either one element of the List is
+	 *         still visible after the timeout or true when all elements are not
+	 *         visible anymore
 	 */
 	public boolean waitForInvisibilityOfElements(List<WebElement> allContainers, int timeout) {
 		if (allContainers != null) {
 
 			try {
 				log.info("Waiting for max:: " + timeout + " seconds for elements " + allContainers.toString()
-				+ " to be available");
+						+ " to be available");
 
 				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
 				wait.until(ExpectedConditions.invisibilityOfAllElements(allContainers));
@@ -259,14 +276,13 @@ public class ExplicitWaits {
 		return false;
 
 	}
-	
+
 	public boolean javaScriptWaitWholePage(int timeout) {
 		try {
-			log.info(
-					"Waiting for max:: " + timeout + " seconds for the Page to be visible");
+			log.info("Waiting for max:: " + timeout + " seconds for the Page to be visible");
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
-			wait.until((ExpectedCondition<Boolean>) wd ->
-			   ((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete"));			
+			wait.until((ExpectedCondition<Boolean>) wd -> ((JavascriptExecutor) wd)
+					.executeScript("return document.readyState").equals("complete"));
 			log.info("The Page was loaded");
 			return true;
 		} catch (Exception e) {
@@ -275,11 +291,10 @@ public class ExplicitWaits {
 		}
 
 	}
-	
 
 	/**
 	 * 
-	 *  Method to wait for an Attribute from the element to contain certain value
+	 * Method to wait for an Attribute from the element to contain certain value
 	 * 
 	 * @param webEl
 	 * @param attribute
@@ -287,17 +302,17 @@ public class ExplicitWaits {
 	 * @param timeout
 	 * @return
 	 */
-	public boolean waitForAttributeToBe(WebElement webEl,String attribute,String value,int timeout) {
+	public boolean waitForAttributeToBe(WebElement webEl, String attribute, String value, int timeout) {
 		if (webEl != null) {
 
 			try {
 				log.info("Waiting for max:: " + timeout + " seconds for element " + webEl.toString()
-						+ " for the Attribute: "+ attribute+ " to contain: "+ value);
+						+ " for the Attribute: " + attribute + " to contain: " + value);
 
 				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
 
-				wait.until(ExpectedConditions.attributeContains(webEl, attribute,value));
-				log.info("Element " + webEl.toString() + " contains: "+ value);
+				wait.until(ExpectedConditions.attributeContains(webEl, attribute, value));
+				log.info("Element " + webEl.toString() + " contains: " + value);
 				return true;
 
 			} catch (Exception e) {
@@ -309,6 +324,5 @@ public class ExplicitWaits {
 		return false;
 
 	}
-	
 
 }

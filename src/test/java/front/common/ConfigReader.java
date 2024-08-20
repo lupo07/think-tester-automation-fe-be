@@ -103,6 +103,10 @@ public class ConfigReader {
 		return pro.getProperty("DockerStopLine");
 	}
 
+	public String getLocalURL() {
+		return pro.getProperty("LocalURL");
+	}
+
 	//---------------------------------------------
 
 }

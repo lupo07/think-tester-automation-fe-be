@@ -37,9 +37,6 @@ import front.pages.ContactsPage;
 import front.pages.EditContactsPages;
 import front.pages.LoginPage;
 
-//import app.pages.CartPage;
-//import app.pages.ProductPage;
-//import app.pages.ProductStoreLPage;
 
 public class BaseTestFront {
 	public WebDriver driver;
@@ -64,7 +61,7 @@ public class BaseTestFront {
 		Object[][] testData = ExcelUtility.getTestData("add_contacts_fr");
 		return testData;
 	}
-	
+
 	@DataProvider(name = "deleteContactsFrontTD")
 	public Object[][] deletContactProvider() throws Exception {
 		ExcelUtility.setExcelFile(ConstantsFront.FILE_PATH_CONTACTS_TEST + ConstantsFront.FILE_NAME_CONTACTS_TEST,
@@ -72,7 +69,7 @@ public class BaseTestFront {
 		Object[][] testData = ExcelUtility.getTestData("delete_contacts_fr");
 		return testData;
 	}
-	
+
 	@DataProvider(name = "editContactsFrontTD")
 	public Object[][] editContactProvider() throws Exception {
 		ExcelUtility.setExcelFile(ConstantsFront.FILE_PATH_CONTACTS_TEST + ConstantsFront.FILE_NAME_CONTACTS_TEST,
@@ -141,17 +138,18 @@ public class BaseTestFront {
 	}
 
 	@BeforeMethod
-	@Parameters({ "browser" })
-	public void setClasses(String browser) throws MalformedURLException {
+	@Parameters({ "runType", "browser" })
+	public void setClasses(String runType, String browser) throws MalformedURLException {
 		ThreadContext.put("contextKey", this.getClass().getName());
 		log.info("The Test Suite " + this.getClass().getName() + " has started");
 
 		ds = new DriverSetUp(browser);
-		driver = ds.driveReturn();
-		log.info("Local Driver");
+
+		driver = (runType.equals("local")) ? ds.driveReturn() : ds.driveReturn(config.getLocalURL());
+
 
 		log.info(" Base Url: " + config.getBaseURL() + " Browser: " + browser);
-		log.info("Driver: " + driver);
+		log.info(runType + " Driver: " + driver);
 
 		lp = new LoginPage(driver);
 		conpage = new ContactsPage(driver);

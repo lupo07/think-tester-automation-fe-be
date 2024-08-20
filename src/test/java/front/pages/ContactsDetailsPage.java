@@ -53,19 +53,9 @@ public class ContactsDetailsPage {
 	 */
 	public void clickOnDeleteButton() {
 		expw.waitForElementToBeClickable(deleteButton, ConstantsFront.EXPLICIT_WAIT_CONTACT_DETAILS_PAGE);
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		expw.waitNoCondition(ConstantsFront.EXPLICIT_WAIT_SHORT_WAIT_MILLIS);
 		deleteButton.click();
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		expw.waitNoCondition(ConstantsFront.EXPLICIT_WAIT_SHORT_WAIT_MILLIS);
 		log.info("Click on Submit Button");
 	}
 	
@@ -82,13 +72,9 @@ public class ContactsDetailsPage {
 	 * 
 	 */
 	public void acceptPopUp() {
-		try {
-			Thread.sleep(3000);
-			Alert alert = driver.switchTo().alert();
-			alert.accept();	
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		expw.waitNoCondition(ConstantsFront.EXPLICIT_WAIT_SHORT_WAIT_MILLIS);
+		Alert alert = driver.switchTo().alert();
+		alert.accept();
 		
 		log.info("The alert was displayed successfully");
 	}

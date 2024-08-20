@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite parallel="false" name="Suite">
 	<parameter name="browser" value="chrome" />
-	<parameter name="startDocker" value="local" />
-	<parameter name="runType" value="local" />
+	<parameter name="startDocker" value="alone" />
+	<parameter name="runType" value="remote" />
 	<parameter name="environment" value="test" />
 
 	<test name="Test">
